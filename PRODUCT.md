@@ -21,7 +21,7 @@ Showcase authentic technical craft, systems architecture, and database engineeri
 
 ## Positioning
 
-A timeless, craft-focused studio portfolio of Fernando Rodríguez Rada—a Computer Science student at IUTECP in Guatire, Miranda, Venezuela. Demonstrates real-world software engineering discipline (database schemas, network protocols, PWA offline resilience, and systems tooling) with thoughtful editorial typography, dual English/Spanish localization, and seamless Light/Dark themes.
+A timeless, craft-focused studio portfolio of Fernando Rodríguez Rada—a tech-curious Computer Science student at IUTECP in Guatire, Miranda, Venezuela. Demonstrates frontend craft, design systems, and agentic AI automation backed by solid full-stack architecture discipline (database schemas, network protocols, PWA offline resilience, and systems tooling) with thoughtful editorial typography, dual English/Spanish localization, and seamless Light/Dark themes.
 
 ## Operating Context
 
@@ -33,7 +33,7 @@ Screened across mobile, tablet, and desktop devices by reviewers who value clari
 - **Languages:** Dual native bilingual support (`English` and `Spanish`) with zero-reload dynamic switching.
 - **Themes:** Dual-theme system defaulting to Light Mode (warm linen studio `#FAF8F5` with saddle leather light brown accent `#8C532B`), togglable to Sober Dark Mode (warm dark roast slate `#171514` with sandstone beige accent `#DEB085`).
 - **Typography:** Architectural studio pair: `Epilogue` (bold geometric display headers) + `Source Sans 3` (clean editorial body prose) + `JetBrains Mono` (technical tags/code).
-- **Core Technical Domains:** PHP 8.4/8.2+ (PDO, FPM), MariaDB 11.8 / SQL tuning, Node.js / Fastify WebSockets, Rust systems tooling, RESTful APIs, and resilient PWA architectures.
+- **Core Technical Domains:** Frontend UI craft (modern JS, React, CSS systems), Agentic AI automation, PHP 8.4/8.2+ (PDO, FPM), MariaDB 11.8 / SQL tuning, Node.js / Fastify WebSockets, Rust systems tooling, RESTful APIs, and resilient PWA architectures.
 - **Flagships ("The Big 3"):** Cambi (PWA, currency & local-first payment manager), QR_IUTECP (university attendance & security system), Together (real-time cross-continental media sync).
 - **Secondary Directory:** Playful (Rust TUI player), Terra (PHP/MariaDB seismic monitor), Colmena (PHP modular management), Mercader FBA (Amazon FBA analytics), Python Monitor (Flask currency microservice).
 

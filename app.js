@@ -29,7 +29,7 @@
 
       // Section Titles & Subtitles
       sec_about_title: 'ABOUT <span class="accent-word">ME</span>',
-      sec_about_sub: 'Computer Science student focused on backend systems, clean architecture, and practical engineering.',
+      sec_about_sub: 'Tech enthusiast and software builder focused on frontend craft, design systems, and agentic AI workflows.',
       sec_work_title: 'SELECTED <span class="accent-word">WORK</span>',
       sec_work_sub: 'Three production applications where I solved real architectural, performance, and security challenges.',
       sec_other_title: 'OTHER <span class="accent-word">PROJECTS</span>',
@@ -41,24 +41,24 @@
 
       // About Me Section
       polaroid_caption: 'FERNANDO • GUATIRE, VE',
-      about_lead: 'Hi! I\'m Fernando Rodríguez, a Computer Science student at IUTECP living in Guatire, Miranda, Venezuela.',
-      about_p1: 'I build practical web applications, backend services, and developer tools. I enjoy working on projects with real constraints—whether that\'s handling currency volatility with local-first offline storage, automating university attendance with ephemeral QR codes, or keeping audio in sync across international latencies.',
-      about_p2: 'I focus on clean code, database modeling, and software that genuinely works in everyday situations without unnecessary complexity.',
+      about_lead: 'I\'m Fernando Rodríguez—a tech-curious builder driven by frontend craft, interface design, and intelligent agentic automation. Based in Guatire, Venezuela and studying Computer Science at IUTECP.',
+      about_p1: 'I explore software with deep curiosity: from polishing tactile user interfaces and design systems, to experimenting with autonomous agentic workflows and resilient full-stack architectures. I love tackling real constraints—whether that\'s solving currency volatility with local-first offline storage, syncing real-time audio across continents, or building snappy terminal tools.',
+      about_p2: 'While I have solid full-stack and backend capabilities (databases, real-time WebSockets, system tooling), my true passion lives in the frontend experience: building intuitive, highly-polished software that feels effortless to use.',
       btn_view_projects: 'View Projects',
       btn_copy_email: 'Copy Email',
 
       // Things I Enjoy & What I Can Do
       enjoy_title: 'Things I Enjoy',
       enjoy_1: 'Linux &amp; Open-Source Tools',
-      enjoy_2: 'Backend Architecture &amp; Data Modeling',
-      enjoy_3: 'Music Listening &amp; Tactical Gaming',
+      enjoy_2: 'Frontend Craft, UI Design &amp; Layout Systems',
+      enjoy_3: 'Autonomous AI Agents &amp; Intelligent Automation',
       cando_title: 'What I Can Do',
-      cando_1: 'PHP &amp; Backend Systems',
-      cando_2: 'SQL &amp; MariaDB Modeling',
-      cando_3: 'Real-Time WebSockets',
-      cando_4: 'Offline-First PWAs',
-      cando_5: 'RESTful APIs &amp; Web Apps',
-      cando_6: 'Linux &amp; Server Ops',
+      cando_1: 'Modern Frontend &amp; UI',
+      cando_2: 'PHP &amp; Backend Systems',
+      cando_3: 'SQL &amp; Database Modeling',
+      cando_4: 'Real-Time WebSockets',
+      cando_5: 'Agentic AI &amp; Automation',
+      cando_6: 'Offline-First PWAs',
 
       // Flagship 1: Cambi
       cambi_badge: 'Progressive Web App',
@@ -128,7 +128,7 @@
 
       // Títulos y Subtítulos de Sección
       sec_about_title: 'SOBRE <span class="accent-word">MÍ</span>',
-      sec_about_sub: 'Estudiante de desarrollo de software enfocado en arquitectura backend, código limpio e ingeniería práctica.',
+      sec_about_sub: 'Entusiasta de la tecnología y desarrollador enfocado en craft frontend, sistemas de diseño y agentes de IA.',
       sec_work_title: 'PROYECTOS <span class="accent-word">DESTACADOS</span>',
       sec_work_sub: 'Tres aplicaciones completas donde resolví retos reales de arquitectura, rendimiento y seguridad.',
       sec_other_title: 'OTROS <span class="accent-word">PROYECTOS</span>',
@@ -136,28 +136,28 @@
       sec_skills_title: 'HABILIDADES Y <span class="accent-word">HERRAMIENTAS</span>',
       sec_skills_sub: 'Tecnologías, motores de bases de datos y herramientas con las que trabajo a diario.',
       sec_contact_title: 'HABLEMOS Y <span class="accent-word">COLABOREMOS</span>',
-      sec_contact_sub: 'Actualmente estudio Informática en el IUTECP y estoy abierto a oportunidades laborales, pasantías y proyectos colaborativos de backend o full-stack. Con gusto conversemos.',
+      sec_contact_sub: 'Actualmente estudio Informática en el IUTECP y estoy abierto a oportunidades laborales, pasantías y proyectos colaborativos de frontend o full-stack. Con gusto conversemos.',
 
       // Sección Sobre Mí
       polaroid_caption: 'FERNANDO • GUATIRE, VE',
-      about_lead: '¡Hola! Soy Fernando Rodríguez, estudiante de Informática en el IUTECP y vivo en Guatire, Miranda, Venezuela.',
-      about_p1: 'Desarrollo aplicaciones web prácticas, servicios backend y herramientas para desarrolladores. Me apasiona resolver problemas con restricciones reales: desde lidiar con la volatilidad cambiaria mediante almacenamiento local offline, hasta automatizar la asistencia universitaria con códigos QR efímeros y sincronizar audio a través de latencias internacionales.',
-      about_p2: 'Mi enfoque está en el código limpio, el modelado de bases de datos y la creación de software que funcione de verdad en el día a día, sin complejidades innecesarias.',
+      about_lead: 'Soy Fernando Rodríguez: curioso por naturaleza, apasionado por el frontend, el diseño de interfaces y la automatización con agentes de IA. Estudio Informática en el IUTECP y construyo software desde Guatire, Venezuela.',
+      about_p1: 'Exploro el software con profunda curiosidad: desde pulir interfaces táctiles y sistemas de diseño en el frontend, hasta orquestar agentes autónomos y construir arquitecturas full-stack sólidas. Me apasiona resolver restricciones reales: lidiar con la volatilidad cambiaria mediante almacenamiento local-first, sincronizar audio en tiempo real entre continentes o crear herramientas de terminal rápidas.',
+      about_p2: 'Aunque cuento con sólidas capacidades full-stack y de backend (bases de datos, WebSockets en tiempo real y herramientas de sistema), mi verdadera vocación está en el frontend: crear experiencias intuitivas, reactivas y con un nivel de detalle que se sienta natural.',
       btn_view_projects: 'Ver Proyectos',
       btn_copy_email: 'Copiar Correo',
 
       // Lo que disfruto y Lo que sé hacer
       enjoy_title: 'Lo Que Disfruto',
       enjoy_1: 'Linux y Herramientas Open-Source',
-      enjoy_2: 'Arquitectura Backend y Modelado de Datos',
-      enjoy_3: 'Música y Videojuegos Tácticos',
+      enjoy_2: 'Craft Frontend, Diseño UI y Sistemas de Layout',
+      enjoy_3: 'Agentes Autónomos de IA y Automatización',
       cando_title: 'Lo Que Sé Hacer',
-      cando_1: 'PHP y Sistemas Backend',
-      cando_2: 'Modelado SQL y MariaDB',
-      cando_3: 'WebSockets y Tiempo Real',
-      cando_4: 'PWAs Offline-First',
-      cando_5: 'APIs REST y Apps Web',
-      cando_6: 'Linux y Servidores',
+      cando_1: 'Frontend Moderno y UI',
+      cando_2: 'PHP y Sistemas Backend',
+      cando_3: 'Modelado SQL y Bases de Datos',
+      cando_4: 'WebSockets y Tiempo Real',
+      cando_5: 'Agentes de IA y Automatización',
+      cando_6: 'PWAs Offline-First',
 
       // Flagship 1: Cambi
       cambi_badge: 'Aplicación Web Progresiva',
