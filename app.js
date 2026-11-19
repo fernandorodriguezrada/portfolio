@@ -26,6 +26,7 @@
       nav_contact: 'CONTACT',
       theme_toggle_label: 'Toggle color theme',
       lang_toggle_label: 'Switch to Spanish language',
+      menu_toggle_label: 'Toggle navigation menu',
 
       // Section Titles & Subtitles
       sec_about_title: 'ABOUT <span class="accent-word">ME</span>',
@@ -124,6 +125,7 @@
       nav_contact: 'CONTACTO',
       theme_toggle_label: 'Cambiar tema de color',
       lang_toggle_label: 'Cambiar idioma a Inglés',
+      menu_toggle_label: 'Alternar menú de navegación',
 
       // Títulos y Subtítulos de Sección
       sec_about_title: 'SOBRE <span class="accent-word">MÍ</span>',
@@ -218,6 +220,8 @@
   const htmlEl = document.documentElement;
   const langToggleBtn = document.getElementById('lang-toggle-btn');
   const themeToggleBtn = document.getElementById('theme-toggle-btn');
+  const menuToggleBtn = document.getElementById('menu-toggle-btn');
+  const mobileNavDrawer = document.getElementById('mobile-nav-drawer');
   const email = 'frr20122@gmail.com';
   const toast = document.getElementById('toast');
   let toastTimer = null;
@@ -276,6 +280,11 @@
         el.innerHTML = i18n[lang][key];
       }
     });
+
+    // Update Menu Toggle Button label
+    if (menuToggleBtn && i18n[lang].menu_toggle_label) {
+      menuToggleBtn.setAttribute('aria-label', i18n[lang].menu_toggle_label);
+    }
 
     // Update Language Toggle Button visual state
     if (langToggleBtn) {
@@ -359,6 +368,71 @@
         targetEl.scrollIntoView({ behavior: 'smooth' });
       }
     });
+  });
+
+  // =========================================================================
+  // 6. MOBILE NAVIGATION DRAWER
+  // =========================================================================
+  function openMobileMenu() {
+    if (!mobileNavDrawer || !menuToggleBtn) return;
+    mobileNavDrawer.removeAttribute('hidden');
+    mobileNavDrawer.classList.add('is-open');
+    menuToggleBtn.setAttribute('aria-expanded', 'true');
+  }
+
+  function closeMobileMenu() {
+    if (!mobileNavDrawer || !menuToggleBtn) return;
+    mobileNavDrawer.classList.remove('is-open');
+    mobileNavDrawer.setAttribute('hidden', '');
+    menuToggleBtn.setAttribute('aria-expanded', 'false');
+  }
+
+  function toggleMobileMenu() {
+    if (!mobileNavDrawer) return;
+    const isOpen = mobileNavDrawer.classList.contains('is-open');
+    if (isOpen) {
+      closeMobileMenu();
+    } else {
+      openMobileMenu();
+    }
+  }
+
+  if (menuToggleBtn) {
+    menuToggleBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      toggleMobileMenu();
+    });
+  }
+
+  // Close when clicking any mobile nav link
+  document.querySelectorAll('.mobile-nav-link').forEach((link) => {
+    link.addEventListener('click', function () {
+      closeMobileMenu();
+    });
+  });
+
+  // Close when clicking outside the topbar
+  document.addEventListener('click', function (e) {
+    if (mobileNavDrawer && mobileNavDrawer.classList.contains('is-open')) {
+      if (!e.target.closest('.topbar')) {
+        closeMobileMenu();
+      }
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mobileNavDrawer && mobileNavDrawer.classList.contains('is-open')) {
+      closeMobileMenu();
+      if (menuToggleBtn) menuToggleBtn.focus();
+    }
+  });
+
+  // Auto-close on resize to desktop width
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 860 && mobileNavDrawer && mobileNavDrawer.classList.contains('is-open')) {
+      closeMobileMenu();
+    }
   });
 
 })();

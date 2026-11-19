@@ -1,26 +1,19 @@
-\documentclass[10pt,letterpaper]{article}
+\documentclass[11pt,letterpaper]{article}
 
 % Page Geometry & Margins (Crafted for an immaculate 1-page layout)
 \usepackage{geometry}
 \geometry{
   letterpaper,
-  top=0.38in,
-  bottom=0.38in,
-  left=0.52in,
-  right=0.52in
+  top=0.35in,
+  bottom=0.35in,
+  left=0.50in,
+  right=0.50in
 }
 
-% Typography via XeLaTeX (High Legibility System Fonts)
-\usepackage{fontspec}
-\setmainfont{Liberation Sans}[
-  BoldFont = Liberation Sans Bold,
-  ItalicFont = Liberation Sans Italic,
-  BoldItalicFont = Liberation Sans Bold Italic
-]
-\setmonofont{Liberation Mono}[
-  Scale = 0.85,
-  BoldFont = Liberation Mono Bold
-]
+% Typography (Usa la fuente sans-serif nativa incluida en cualquier TeX Live)
+\usepackage[utf8]{inputenc}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{amssymb}
 
 % Color Palette: WARM BEIGE & SADDLE BROWN MOTIFS (Clean, ink-friendly, high contrast)
 \usepackage{xcolor}
@@ -46,23 +39,24 @@
 % Spacing & Layout Controls
 \usepackage{parskip}
 \setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
 \pagestyle{empty}
 
 % Section Header Command with Warm Sandstone Divider
 \newcommand{\cvsection}[1]{%
-  \vspace{5pt}%
+  \vspace{4pt}%
   {\color{primarydark}\textbf{\small\bfseries #1}}%
-  \par\vspace{1.5pt}%
+  \par\vspace{1.2pt}%
   {\color{rulebeige}\hrule height 0.65pt}%
-  \vspace{3.5pt}%
+  \vspace{2.5pt}%
 }
 
 % Project Entry Command (Clean 2-line layout)
 \newcommand{\cvproject}[4]{%
   \textbf{#1} \hfill {\footnotesize\color{textmuted} #2}%
-  \par\vspace{0.8pt}%
+  \par\vspace{0.5pt}%
   {\footnotesize \color{linkbrown}#3} \hfill {\footnotesize\color{textmuted} #4}%
-  \par\vspace{1.2pt}%
+  \par\vspace{0.8pt}%
 }
 
 \begin{document}
@@ -72,83 +66,81 @@
 % HEADER: IDENTIDAD Y CONTACTO (LIMPIO, BALANCEADO Y SIN SOLAPAMIENTO)
 % ============================================================================
 \begin{center}
-  {\fontsize{17}{20}\selectfont\textbf{\color{primarydark} Fernando Rodríguez Rada}}
+  {\fontsize{18}{21}\selectfont\textbf{\color{primarydark} Fernando Rodríguez Rada}}
   \par\vspace{1.5pt}
   {\color{primary}\textbf{\small Desarrollador Frontend \& Full Stack}}
-  \par\vspace{3.5pt}
+  \par\vspace{2.5pt}
   {\footnotesize
-    Guatire, Miranda, Venezuela \enspace · \enspace
-    (+58) 0412-7040141 \enspace · \enspace
+    Guatire, Miranda, Venezuela \enspace $\cdot$ \enspace
+    (+58) 0412-7040141 \enspace $\cdot$ \enspace
     \href{mailto:frr20122@gmail.com}{frr20122@gmail.com}
   }
-  \par\vspace{1.8pt}
+  \par\vspace{1.5pt}
   {\footnotesize
-    \href{https://github.com/fernandorodriguezrada}{github.com/fernandorodriguezrada} \enspace · \enspace
-    \href{https://fernandorodriguezrada.github.io/portfolio/}{fernandorodriguezrada.github.io/portfolio} \enspace · \enspace
+    \href{https://github.com/fernandorodriguezrada}{github.com/fernandorodriguezrada} \enspace $\cdot$ \enspace
+    \href{https://fernandorodriguezrada.github.io/portfolio/}{fernandorodriguezrada.github.io/portfolio} \enspace $\cdot$ \enspace
     {\color{textmuted}C.I. V-31.853.086 (22 años)}
   }
+  \par\vspace{5pt}
+  {\color{rulebeige}\hrule height 0.75pt}
 \end{center}
-\vspace{-3pt}
-{\color{rulebeige}\hrule height 0.75pt}
-\vspace{2.5pt}
+\vspace{1pt}
 
 % ============================================================================
 % SOBRE MÍ
 % ============================================================================
 \cvsection{SOBRE MÍ}
-Desarrollador enfocado en frontend, interfaces cuidadas y aplicaciones web prácticas. Cuento con experiencia sólida en backend (PHP, Node.js), modelado de bases de datos relacionales y automatización asistida por agentes de IA. Estudiante de Ingeniería en Informática en el IUTECP y graduado del programa profesional Full Stack en EDTécnica.
+Desarrollador enfocado en frontend, interfaces cuidadas y aplicaciones web prácticas. Cuento con experiencia sólida en backend (PHP, Node.js), modelado de bases de datos relacionales y automatización asistida por agentes de IA. Estudiante de TSU en Informática en el IUTECP y graduado del programa profesional Full Stack en EDTécnica.
+
+% ============================================================================
+% FORMACIÓN ACADÉMICA
+% ============================================================================
+\cvsection{FORMACIÓN ACADÉMICA}
+
+\textbf{Instituto Universitario de Tecnología Elías Calixto Pompa (IUTECP)} \hfill {\footnotesize\color{textmuted} Guatire, Miranda}\\
+Estudiante de TSU en Informática \hfill {\footnotesize\color{textmuted} 2023 -- Presente}
+
+\vspace{1.5pt}
+\textbf{EDTécnica} \hfill {\footnotesize\color{textmuted} Caracas, Venezuela}\\
+Graduado del curso profesional de Programación Full Stack \hfill {\footnotesize\color{textmuted} 2023}\\
+{\footnotesize\color{textmuted} Proyecto final: \textit{Mundo Servicios} (portal web con autenticación de usuarios en Firebase).}
+
+\vspace{1.5pt}
+\textbf{Unidad Educativa Privada Nuestra Señora del Camino} \hfill {\footnotesize\color{textmuted} Guatire, Miranda}\\
+Educación Inicial, Primaria y Media General (Bachiller) \hfill {\footnotesize\color{textmuted} Egresado}
 
 % ============================================================================
 % PROYECTOS DESTACADOS
 % ============================================================================
 \cvsection{PROYECTOS DESTACADOS}
 
-\cvproject{Together}{Fastify 5 · WebSockets · React 18 · PostgreSQL}{\href{https://together-78s9.onrender.com}{together-78s9.onrender.com} \enspace · \enspace \href{https://github.com/fernandorodriguezrada/together}{GitHub}}{2024 -- 2025}
+\cvproject{Together}{Fastify 5 $\cdot$ WebSockets $\cdot$ React 18 $\cdot$ PostgreSQL}{\href{https://together-78s9.onrender.com}{together-78s9.onrender.com} \enspace $\cdot$ \enspace \href{https://github.com/fernandorodriguezrada/together}{GitHub}}{2026}
 Plataforma web para escuchar música sincronizada a larga distancia con amigos en tiempo real, mediante un protocolo WebSocket con corrección continua de latencia entre participantes.
 
-\vspace{3pt}
-\cvproject{QR\_IUTECP}{PHP (PDO) · MariaDB 11.8 · jsQR · Docker}{\href{https://asistenciasiutecp.rf.gd/}{asistenciasiutecp.rf.gd} \enspace · \enspace \href{https://github.com/fernandorodriguezrada/qr_iutecp}{GitHub}}{2024 -- 2025}
-Sistema de control de asistencia para el IUTECP que digitaliza las listas en papel mediante códigos QR dinámicos y temporales (TTL de 5 min) con escaneo directo desde la cámara web del navegador.
+\vspace{1.5pt}
+\cvproject{QR\_IUTECP}{PHP (PDO) $\cdot$ MariaDB 11.8 $\cdot$ jsQR $\cdot$ Docker}{\href{https://asistenciasiutecp.rf.gd/}{asistenciasiutecp.rf.gd} \enspace $\cdot$ \enspace \href{https://github.com/fernandorodriguezrada/qr_iutecp}{GitHub}}{2026}
+Sistema de control de asistencia para el IUTECP que digitaliza las listas en papel mediante códigos QR dinámicos y temporales con escaneo directo desde la cámara web del navegador.
 
-\vspace{3pt}
-\cvproject{Cambi}{PHP 8.4 · JavaScript · PWA · Tailwind CSS}{\href{https://cambibak.rf.gd/}{cambibak.rf.gd} \enspace · \enspace \href{https://github.com/fernandorodriguezrada/cambi}{GitHub}}{2024}
+\vspace{1.5pt}
+\cvproject{Cambi}{PHP 8.4 $\cdot$ JavaScript $\cdot$ PWA $\cdot$ Tailwind CSS}{\href{https://cambibak.rf.gd/}{cambibak.rf.gd} \enspace $\cdot$ \enspace \href{https://github.com/fernandorodriguezrada/cambi}{GitHub}}{2026}
 PWA para consultar tasas oficiales del BCV en tiempo real con soporte offline. Incluye gestor de Pago Móvil con enfoque \textit{local-first} (almacenamiento local en el dispositivo, cero datos privados en servidores).
 
-\vspace{3pt}
-\cvproject{Santa Canela}{PHP · SQL / MariaDB · JavaScript · Tailwind CSS}{Proyecto Comercial a Medida}{2023 -- 2024}
-Herramienta de costeo de insumos, cálculo automatizado de márgenes de ganancia y registro de ventas con conversión de divisas en tiempo real, desarrollada a medida para un negocio gastronómico local.
+\vspace{1.5pt}
+\cvproject{Santa Canela}{PHP $\cdot$ SQL / MariaDB $\cdot$ JavaScript $\cdot$ Tailwind CSS}{Proyecto Comercial}{2026}
+Herramienta de costeo de insumos, cálculo automatizado de márgenes de ganancia y registro de ventas con conversión de divisas en tiempo real, desarrollada para un negocio gastronómico local.
 
-\vspace{3pt}
-\cvproject{Playful}{Rust · ratatui · mpv · Kitty Graphics Protocol}{\href{https://github.com/fernandorodriguezrada/portfolio}{GitHub}}{2024}
+\vspace{1.5pt}
+\cvproject{Playful}{Rust $\cdot$ ratatui $\cdot$ mpv $\cdot$ Kitty Graphics Protocol}{\href{https://github.com/fernandorodriguezrada/playful}{GitHub}}{2026}
 Reproductor de música para terminal Kitty, ligero y controlado enteramente por teclado, con renderizado nativo de carátulas de álbumes mediante el protocolo gráfico de Kitty.
 
 % ============================================================================
 % HABILIDADES TÉCNICAS
 % ============================================================================
 \cvsection{HABILIDADES TÉCNICAS}
-\vspace{0.5pt}
-{\color{primary}\footnotesize■} \textbf{Frontend:} HTML5 Semántico, CSS3, JavaScript (ES6+), React 18, Tailwind CSS, PWAs, Service Workers, UI/UX.\\
-{\color{primary}\footnotesize■} \textbf{Backend:} PHP 8.4 / 8.2 (PDO, FPM, arquitectura limpia), Node.js, Fastify 5, WebSockets, APIs RESTful, Python, Rust.\\
-{\color{primary}\footnotesize■} \textbf{Bases de Datos:} MariaDB / MySQL (modelado relacional, consultas optimizadas), PostgreSQL (Neon), LocalStorage.\\
-{\color{primary}\footnotesize■} \textbf{Herramientas:} Linux (Debian, Ubuntu, Shell scripting / Bash), Git \& GitHub, Docker, Nginx, Agentes de IA.\\
-{\color{primary}\footnotesize■} \textbf{Idiomas:} Español (Nativo) \enspace · \enspace Inglés fluido (técnico y conversacional).
-
-% ============================================================================
-% FORMACIÓN ACADÉMICA
-% ============================================================================
-\cvsection{FORMACIÓN ACADÉMICA}
-\vspace{0.5pt}
-
-\textbf{Instituto Universitario de Tecnología Elías Calixto Pompa (IUTECP)} \hfill {\footnotesize\color{textmuted} Guatire, Miranda}\\
-Estudiante de Ingeniería en Informática \hfill {\footnotesize\color{textmuted} 2023 -- Presente}
-
-\vspace{2.5pt}
-\textbf{EDTécnica} \hfill {\footnotesize\color{textmuted} Caracas, Venezuela}\\
-Graduado del curso profesional de Programación Full Stack \hfill {\footnotesize\color{textmuted} 2023}\\
-{\footnotesize\color{textmuted} Proyecto final: \textit{Mundo Servicios} (portal web con autenticación de usuarios en Firebase).}
-
-\vspace{2.5pt}
-\textbf{U.E.P. Nuestra Señora del Camino} \hfill {\footnotesize\color{textmuted} Guatire, Miranda}\\
-Bachiller en Ciencias \hfill {\footnotesize\color{textmuted} Promoción XX}
+{\color{primary}\footnotesize$\blacksquare$} \textbf{Frontend:} HTML5 Semántico, CSS3, JavaScript (ES6+), React 18, Tailwind CSS, PWAs, Service Workers, UI/UX.\\
+{\color{primary}\footnotesize$\blacksquare$} \textbf{Backend:} PHP 8.4 / 8.2 (PDO, FPM, arquitectura limpia), Node.js, Fastify 5, WebSockets, APIs RESTful, Python, Rust.\\
+{\color{primary}\footnotesize$\blacksquare$} \textbf{Bases de Datos:} MariaDB / MySQL (modelado relacional, consultas optimizadas), PostgreSQL (Neon), LocalStorage.\\
+{\color{primary}\footnotesize$\blacksquare$} \textbf{Herramientas:} Linux (Fedora, Debian, Ubuntu, Shell scripting / Bash), Git \& GitHub, Docker, Nginx, Agentes de IA.\\
+{\color{primary}\footnotesize$\blacksquare$} \textbf{Idiomas:} Español (Nativo) \enspace $\cdot$ \enspace Inglés fluido (técnico y conversacional).
 
 \end{document}

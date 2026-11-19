@@ -29,8 +29,8 @@
         <span class="brand-name">Fernando Rodríguez</span>
       </a>
 
-      <!-- Navigation Links -->
-      <nav aria-label="Main Navigation">
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
         <ul class="nav-links">
           <li><a href="#about" class="nav-link" data-i18n="nav_about">ABOUT</a></li>
           <li><a href="#work" class="nav-link" data-i18n="nav_work">WORK</a></li>
@@ -39,7 +39,7 @@
         </ul>
       </nav>
 
-      <!-- Utility Controls: Language & Theme Switchers -->
+      <!-- Utility Controls: Language & Theme Switchers + Hamburger Toggle -->
       <div class="utility-group">
         <button type="button" class="lang-toggle-btn" id="lang-toggle-btn" aria-label="Switch Language">
           <span class="active-lang">EN</span> | <span>ES</span>
@@ -50,9 +50,26 @@
           <!-- Lucide Moon Icon (shown in light mode) -->
           <svg class="lucide icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
         </button>
+        <button type="button" class="menu-toggle-btn" id="menu-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <svg class="lucide icon-hamburger" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="4" x2="20" y1="6" y2="6" class="line-top"/>
+            <line x1="4" x2="20" y1="12" y2="12" class="line-mid"/>
+            <line x1="4" x2="20" y1="18" y2="18" class="line-bot"/>
+          </svg>
+        </button>
       </div>
 
     </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation" hidden>
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-nav-link" data-i18n="nav_about">ABOUT</a></li>
+        <li><a href="#work" class="mobile-nav-link" data-i18n="nav_work">WORK</a></li>
+        <li><a href="#skills" class="mobile-nav-link" data-i18n="nav_skills">SKILLS</a></li>
+        <li><a href="#contact" class="mobile-nav-link" data-i18n="nav_contact">CONTACT</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main class="container">
