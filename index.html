@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&family=JetBrains+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <link rel="icon" type="image/png" href="assets/fr_logo.png">
+  <link rel="apple-touch-icon" href="assets/fr_logo.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,9 +21,9 @@
   <header class="topbar" id="top">
     <div class="topbar-container">
       
-      <!-- Monogram Badge & Name -->
+      <!-- Brand Logo & Name -->
       <a href="#top" class="brand-group" aria-label="Fernando Rodríguez Rada — Home">
-        <div class="monogram-emblem" aria-hidden="true">FR</div>
+        <img src="assets/fr_logo.png" alt="FR" class="brand-logo" width="30" height="30" aria-hidden="true">
         <span class="brand-name">Fernando Rodríguez</span>
       </a>
 
@@ -72,8 +74,7 @@
         <!-- Left: Polaroid Printed Photo Frame -->
         <div class="polaroid-frame">
           <div class="polaroid-photo">
-            <img src="assets/avatar.svg" alt="Fernando Rodríguez Rada" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="polaroid-monogram" style="display:none;" aria-hidden="true">FR</div>
+            <img src="assets/fr_logo.png" alt="Fernando Rodríguez Rada">
           </div>
           <div class="polaroid-caption" data-i18n="polaroid_caption">FERNANDO &bull; GUATIRE, VE</div>
         </div>
@@ -625,8 +626,9 @@
     <!-- Site Footer -->
     <footer class="site-footer">
       <div class="footer-flex">
-        <div data-i18n="footer_copy">
-          Made with ❤️ by Fernando Rodríguez Rada
+        <div class="footer-brand-wrap">
+          <img src="assets/fr_logo.png" alt="FR" class="footer-logo" width="22" height="22" aria-hidden="true">
+          <span data-i18n="footer_copy">Made with ❤️ by Fernando Rodríguez Rada</span>
         </div>
         <div class="footer-links-group">
           <a href="#top" class="footer-link-item" data-i18n="footer_back_top">Back to top ↑</a>
