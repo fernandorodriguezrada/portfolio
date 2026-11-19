@@ -331,6 +331,10 @@ body {
   text-align: center;
 }
 
+#about .section-header-rule {
+  margin-bottom: 2.25rem;
+}
+
 .section-header-rule::before,
 .section-header-rule::after {
   content: '';

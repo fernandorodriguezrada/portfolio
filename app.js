@@ -29,7 +29,6 @@
 
       // Section Titles & Subtitles
       sec_about_title: 'ABOUT <span class="accent-word">ME</span>',
-      sec_about_sub: 'Tech enthusiast and software builder focused on frontend craft, design systems, and agentic AI workflows.',
       sec_work_title: 'SELECTED <span class="accent-word">WORK</span>',
       sec_work_sub: 'Three production applications where I solved real architectural, performance, and security challenges.',
       sec_other_title: 'OTHER <span class="accent-word">PROJECTS</span>',
@@ -41,16 +40,16 @@
 
       // About Me Section
       polaroid_caption: 'FERNANDO • GUATIRE, VE',
-      about_lead: 'I\'m Fernando Rodríguez—a tech-curious builder driven by frontend craft, interface design, and intelligent agentic automation. Based in Guatire, Venezuela and studying Computer Science at IUTECP.',
-      about_p1: 'I explore software with deep curiosity: from polishing tactile user interfaces and design systems, to experimenting with autonomous agentic workflows and resilient full-stack architectures. I love tackling real constraints—whether that\'s solving currency volatility with local-first offline storage, syncing real-time audio across continents, or building snappy terminal tools.',
-      about_p2: 'While I have solid full-stack and backend capabilities (databases, real-time WebSockets, system tooling), my true passion lives in the frontend experience: building intuitive, highly-polished software that feels effortless to use.',
+      about_lead: 'I\'m Fernando Rodríguez, frontend developer and Computer Science student at IUTECP (Guatire, Venezuela).',
+      about_p1: 'I focus on creating fast, clear, and well-designed interfaces. While I also work across the backend and AI agent automation, I enjoy frontend the most—refining the details that make an application feel natural.',
+      about_p2: 'I like solving practical problems: from handling currency volatility with local-first offline storage, to syncing real-time audio across continents or building snappy terminal tools.',
       btn_view_projects: 'View Projects',
       btn_copy_email: 'Copy Email',
 
       // Things I Enjoy & What I Can Do
       enjoy_title: 'Things I Enjoy',
       enjoy_1: 'Linux &amp; Open-Source Tools',
-      enjoy_2: 'Frontend Craft, UI Design &amp; Layout Systems',
+      enjoy_2: 'Frontend Development, UI Design &amp; Layout Systems',
       enjoy_3: 'Autonomous AI Agents &amp; Intelligent Automation',
       cando_title: 'What I Can Do',
       cando_1: 'Modern Frontend &amp; UI',
@@ -128,7 +127,6 @@
 
       // Títulos y Subtítulos de Sección
       sec_about_title: 'SOBRE <span class="accent-word">MÍ</span>',
-      sec_about_sub: 'Entusiasta de la tecnología y desarrollador enfocado en craft frontend, sistemas de diseño y agentes de IA.',
       sec_work_title: 'PROYECTOS <span class="accent-word">DESTACADOS</span>',
       sec_work_sub: 'Tres aplicaciones completas donde resolví retos reales de arquitectura, rendimiento y seguridad.',
       sec_other_title: 'OTROS <span class="accent-word">PROYECTOS</span>',
@@ -140,16 +138,16 @@
 
       // Sección Sobre Mí
       polaroid_caption: 'FERNANDO • GUATIRE, VE',
-      about_lead: 'Soy Fernando Rodríguez: curioso por naturaleza, apasionado por el frontend, el diseño de interfaces y la automatización con agentes de IA. Estudio Informática en el IUTECP y construyo software desde Guatire, Venezuela.',
-      about_p1: 'Exploro el software con profunda curiosidad: desde pulir interfaces táctiles y sistemas de diseño en el frontend, hasta orquestar agentes autónomos y construir arquitecturas full-stack sólidas. Me apasiona resolver restricciones reales: lidiar con la volatilidad cambiaria mediante almacenamiento local-first, sincronizar audio en tiempo real entre continentes o crear herramientas de terminal rápidas.',
-      about_p2: 'Aunque cuento con sólidas capacidades full-stack y de backend (bases de datos, WebSockets en tiempo real y herramientas de sistema), mi verdadera vocación está en el frontend: crear experiencias intuitivas, reactivas y con un nivel de detalle que se sienta natural.',
+      about_lead: 'Soy Fernando Rodríguez, desarrollador frontend y estudiante de Informática en el IUTECP (Guatire, Venezuela).',
+      about_p1: 'Me enfoco en crear interfaces rápidas, claras y bien diseñadas. Aunque también trabajo en backend y automatización con agentes de IA, disfruto más el frontend y cuidar los detalles que hacen que una app se sienta natural.',
+      about_p2: 'Me gusta resolver problemas prácticos: desde manejar la volatilidad cambiaria con almacenamiento local-first, hasta sincronizar audio en tiempo real o crear herramientas rápidas de terminal.',
       btn_view_projects: 'Ver Proyectos',
       btn_copy_email: 'Copiar Correo',
 
       // Lo que disfruto y Lo que sé hacer
       enjoy_title: 'Lo Que Disfruto',
       enjoy_1: 'Linux y Herramientas Open-Source',
-      enjoy_2: 'Craft Frontend, Diseño UI y Sistemas de Layout',
+      enjoy_2: 'Creación de Frontend, Diseño UI y Sistemas de Layout',
       enjoy_3: 'Agentes Autónomos de IA y Automatización',
       cando_title: 'Lo Que Sé Hacer',
       cando_1: 'Frontend Moderno y UI',
