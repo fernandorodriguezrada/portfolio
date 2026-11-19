@@ -24,7 +24,7 @@ Experience
 - **Themes:**
   - **Light Mode (Default):** Warm linen background (`#FAF8F5`), pure white cards (`#FFFFFF`), soft sandstone borders (`#E2DBD2`), deep charcoal headers (`#1C1917`), dark gray body (`#443E38`), sober light brown / saddle leather accent (`#8C532B`).
   - **Dark Mode:** Warm matte dark roast background (`#171514`), elevated slate cards (`#211D1B`), borders (`#38322D`), off-white headers (`#F7F3EE`), muted gray body (`#C9C1B6`), sandstone beige accent (`#DEB085`).
-- **Typography:** `Epilogue` (bold uppercase section headers) + `Source Sans 3` (clean editorial body prose) + `JetBrains Mono` (technical tags/code).
+- **Typography:** `Cabinet Grotesk` (characterful neo-grotesque display headers) + `General Sans` (crisp, highly legible editorial body & UI prose) + `JetBrains Mono` (technical metadata tags, language toggle, and code).
 - **Navigation & Controls:** Solid matte dark top bar (`#141211`) with circular `FR` monogram badge, clean uppercase navigation links, instant `EN | ES` language switcher, and Sun/Moon theme toggle button.
 - **About Me Section:** 2-column split with Polaroid-style tilted photo frame on the left and first-person bio on the right, followed by "Things I Enjoy" and "What I Can Do" sub-row with warm accent indicators.
 - **Section Headers:** Centered with solid horizontal rules on both sides (`─── ABOUT ME ───` / `─── SOBRE MÍ ───`) and warm accent highlight on the second word.

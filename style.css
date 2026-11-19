@@ -43,9 +43,9 @@
   --nav-border: #2B2622;
   --nav-accent: #DEB085;
 
-  /* Typography */
-  --font-heading: 'Epilogue', system-ui, -apple-system, sans-serif;
-  --font-body: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+  /* Typography: Characterful Neo-Grotesque Display + Crisp Readable Body */
+  --font-heading: 'Cabinet Grotesk', system-ui, -apple-system, sans-serif;
+  --font-body: 'General Sans', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
 
   --content-max-width: 1060px;
@@ -199,10 +199,10 @@ body {
 
 .brand-name {
   font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 0.95rem;
+  font-weight: 800;
+  font-size: 0.98rem;
   color: var(--nav-text-hover);
-  letter-spacing: 0.02em;
+  letter-spacing: -0.01em;
 }
 
 /* Centered Navigation Links */
@@ -216,7 +216,7 @@ body {
 .nav-link {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--nav-text);
@@ -239,13 +239,13 @@ body {
   background: transparent;
   border: 1px solid #333333;
   color: var(--nav-text);
-  font-family: var(--font-heading);
+  font-family: var(--font-mono);
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 600;
   padding: 0.35rem 0.65rem;
   border-radius: var(--radius-xs);
   cursor: pointer;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   transition: all 0.15s ease;
 }
 
@@ -345,12 +345,17 @@ body {
 
 .section-title {
   font-family: var(--font-heading);
-  font-size: 1.75rem;
+  font-size: 1.85rem;
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-heading);
   white-space: nowrap;
+}
+
+.section-title.section-title-sub {
+  font-size: 1.45rem;
+  letter-spacing: 0.05em;
 }
 
 .section-title .accent-word {
@@ -359,11 +364,16 @@ body {
 
 .section-subtitle {
   text-align: center;
-  font-size: 0.98rem;
+  font-size: 1rem;
   color: var(--text-muted);
   max-width: 65ch;
   margin: 0 auto 1.6rem auto;
   line-height: 1.55;
+  letter-spacing: -0.005em;
+}
+
+.secondary-directory-wrap {
+  margin-top: 5rem;
 }
 
 /* ==========================================================================
@@ -421,13 +431,13 @@ body {
 }
 
 .polaroid-caption {
-  font-family: var(--font-heading);
-  font-size: 0.76rem;
-  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
   color: #4B5563;
   text-align: center;
   margin-top: 10px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
@@ -440,11 +450,11 @@ body {
 
 .about-intro-lead {
   font-family: var(--font-heading);
-  font-size: 1.35rem;
-  font-weight: 700;
+  font-size: 1.38rem;
+  font-weight: 800;
   color: var(--text-heading);
-  line-height: 1.35;
-  letter-spacing: -0.01em;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
 }
 
 .about-intro-lead .accent-text {
@@ -452,9 +462,10 @@ body {
 }
 
 .about-body-text {
-  font-size: 0.98rem;
+  font-family: var(--font-body);
+  font-size: 1.02rem;
   color: var(--text-body);
-  line-height: 1.65;
+  line-height: 1.68;
 }
 
 .about-actions {
@@ -481,9 +492,9 @@ body {
 
 .subrow-title {
   font-family: var(--font-heading);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 800;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-heading);
   margin-bottom: 1rem;
@@ -508,7 +519,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  font-size: 0.92rem;
+  font-size: 0.94rem;
   color: var(--text-body);
 }
 
@@ -527,7 +538,7 @@ body {
 }
 
 .cando-item {
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   color: var(--text-body);
   display: flex;
   align-items: center;
@@ -553,9 +564,9 @@ body {
   gap: 0.5rem;
   padding: 0.65rem 1.25rem;
   font-family: var(--font-heading);
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   border-radius: var(--radius-xs);
   text-decoration: none;
@@ -639,17 +650,17 @@ body {
 
 .project-title {
   font-family: var(--font-heading);
-  font-size: 1.65rem;
+  font-size: 1.7rem;
   font-weight: 800;
   color: var(--text-heading);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.025em;
 }
 
 .project-category-badge {
-  font-family: var(--font-heading);
+  font-family: var(--font-mono);
   font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 0.25rem 0.65rem;
   background-color: var(--bg-elevated);
@@ -659,11 +670,13 @@ body {
 }
 
 .project-tagline {
+  font-family: var(--font-heading);
   font-size: 1.05rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--accent);
   margin-bottom: 1.25rem;
   line-height: 1.45;
+  letter-spacing: -0.01em;
 }
 
 .project-narrative-grid {
@@ -675,9 +688,9 @@ body {
 
 .narrative-block h4 {
   font-family: var(--font-heading);
-  font-size: 0.8rem;
+  font-size: 0.76rem;
   font-weight: 800;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--text-dim);
   margin-bottom: 0.55rem;
@@ -705,7 +718,9 @@ body {
 
 .tech-tag {
   font-family: var(--font-mono);
-  font-size: 0.76rem;
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   padding: 0.22rem 0.55rem;
   background-color: var(--bg-elevated);
   border: 1px solid var(--border-subtle);
@@ -761,22 +776,23 @@ body {
 
 .directory-title {
   font-family: var(--font-heading);
-  font-size: 1.2rem;
+  font-size: 1.22rem;
   font-weight: 800;
   color: var(--text-heading);
+  letter-spacing: -0.02em;
 }
 
 .directory-type {
-  font-family: var(--font-heading);
+  font-family: var(--font-mono);
   font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent);
 }
 
 .directory-desc {
-  font-size: 0.94rem;
+  font-size: 0.95rem;
   color: var(--text-body);
   line-height: 1.65;
   margin-bottom: 1.5rem;
@@ -806,9 +822,9 @@ body {
 
 .skills-group-title {
   font-family: var(--font-heading);
-  font-size: 0.95rem;
+  font-size: 0.96rem;
   font-weight: 800;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--text-heading);
   margin-bottom: 1.25rem;
@@ -853,7 +869,8 @@ body {
 
 .skills-val {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
+  font-weight: 500;
   color: var(--text-dim);
 }
 
@@ -879,10 +896,10 @@ body {
 
 .contact-title-group h2 {
   font-family: var(--font-heading);
-  font-size: 1.85rem;
+  font-size: 2rem;
   font-weight: 800;
   color: var(--text-heading);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.025em;
   margin-bottom: 0.5rem;
 }
 
@@ -920,6 +937,9 @@ body {
   display: flex;
   align-items: center;
   gap: 0.65rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 .footer-logo {
@@ -941,6 +961,10 @@ body {
 }
 
 .footer-link-item {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
   color: var(--text-dim);
   text-decoration: none;
   transition: color 0.15s ease;

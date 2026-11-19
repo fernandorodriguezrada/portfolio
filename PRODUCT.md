@@ -32,7 +32,7 @@ Screened across mobile, tablet, and desktop devices by reviewers who value clari
 - **Profile:** Fernando Rodríguez Rada — Computer Science Student at IUTECP (Instituto Universitario de Tecnología Elías Calixto Pompa), Guatire, Miranda, Venezuela.
 - **Languages:** Dual native bilingual support (`English` and `Spanish`) with zero-reload dynamic switching.
 - **Themes:** Dual-theme system defaulting to Light Mode (warm linen studio `#FAF8F5` with saddle leather light brown accent `#8C532B`), togglable to Sober Dark Mode (warm dark roast slate `#171514` with sandstone beige accent `#DEB085`).
-- **Typography:** Architectural studio pair: `Epilogue` (bold geometric display headers) + `Source Sans 3` (clean editorial body prose) + `JetBrains Mono` (technical tags/code).
+- **Typography:** Architectural studio pair: `Cabinet Grotesk` (characterful neo-grotesque display headers) + `General Sans` (crisp, highly legible editorial body & UI prose) + `JetBrains Mono` (technical metadata tags, language toggle, and code).
 - **Core Technical Domains:** Frontend UI craft (modern JS, React, CSS systems), Agentic AI automation, PHP 8.4/8.2+ (PDO, FPM), MariaDB 11.8 / SQL tuning, Node.js / Fastify WebSockets, Rust systems tooling, RESTful APIs, and resilient PWA architectures.
 - **Flagships ("The Big 3"):** Cambi (PWA, currency & local-first payment manager), QR_IUTECP (university attendance & security system), Together (real-time cross-continental media sync).
 - **Secondary Directory:** Playful (Rust TUI player), Terra (PHP/MariaDB seismic monitor), Colmena (PHP modular management), Mercader FBA (Amazon FBA analytics), Python Monitor (Flask currency microservice).
