@@ -1,499 +1,644 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Fernando Rodríguez Rada — Senior Backend & Systems Engineer portfolio. High-concurrency PHP 8.4 runtimes, MariaDB optimization, Fastify WebSockets, Rust systems tooling.">
-  <meta name="theme-color" content="#090c10">
-  <title>Fernando Rodríguez Rada | Systems & Backend Engineer</title>
+  <meta name="description" content="Fernando Rodríguez Rada — Computer Science student at IUTECP in Guatire, Miranda, Venezuela. Building practical web applications, backend services, and developer tools.">
+  <title>Fernando Rodríguez Rada | Computer Science Student at IUTECP</title>
 
-  <!-- Monospace Typography -->
+  <!-- Google Fonts: Epilogue (Headers) + Source Sans 3 (Body) + JetBrains Mono (Code/Tags) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&family=JetBrains+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Persistent Status Bar / Navigation -->
-  <header class="status-bar" id="status-bar">
-    <div class="status-bar-inner">
-      <div class="status-cluster">
-        <span class="status-prompt">sys::fernando@workstation</span>
-        <span class="status-badge active">STATUS: ACTIVE</span>
-        <span class="status-badge">LOC: CARACAS/UTC-4</span>
-        <span class="status-badge">STACK: PHP8.4/NODE/RUST</span>
-      </div>
-      <nav class="status-nav" aria-label="Terminal Navigation">
-        <a href="#overview" class="nav-link"><span class="nav-key">[1]</span>OVERVIEW</a>
-        <a href="#flagships" class="nav-link"><span class="nav-key">[2]</span>FLAGSHIPS</a>
-        <a href="#archive" class="nav-link"><span class="nav-key">[3]</span>ARCHIVE</a>
-        <a href="#cli" class="nav-link"><span class="nav-key">[4]</span>CLI</a>
-        <a href="#contact" class="nav-link"><span class="nav-key">[5]</span>CONTACT</a>
+  <!-- Solid Matte Dark Topbar -->
+  <header class="topbar" id="top">
+    <div class="topbar-container">
+      
+      <!-- Monogram Badge & Name -->
+      <a href="#top" class="brand-group" aria-label="Fernando Rodríguez Rada — Home">
+        <div class="monogram-emblem" aria-hidden="true">FR</div>
+        <span class="brand-name">Fernando Rodríguez</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link" data-i18n="nav_about">ABOUT</a></li>
+          <li><a href="#work" class="nav-link" data-i18n="nav_work">WORK</a></li>
+          <li><a href="#skills" class="nav-link" data-i18n="nav_skills">SKILLS</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav_contact">CONTACT</a></li>
+        </ul>
       </nav>
+
+      <!-- Utility Controls: Language & Theme Switchers -->
+      <div class="utility-group">
+        <button type="button" class="lang-toggle-btn" id="lang-toggle-btn" aria-label="Switch Language">
+          <span class="active-lang">EN</span> | <span>ES</span>
+        </button>
+        <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Theme">
+          <!-- Lucide Sun Icon (shown in dark mode) -->
+          <svg class="lucide icon-sun" viewBox="0 0 24 24" style="display: none;" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          <!-- Lucide Moon Icon (shown in light mode) -->
+          <svg class="lucide icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+      </div>
+
     </div>
   </header>
 
   <main class="container">
 
-    <!-- Section 1: Overview & System Probe -->
-    <section class="hero-block" id="overview">
-      <div class="terminal-card">
-        <div class="terminal-header">
-          <div class="terminal-dots">
-            <span class="terminal-dot"></span>
-            <span class="terminal-dot"></span>
-            <span class="terminal-dot"></span>
-          </div>
-          <span class="terminal-title">fernando_profile.sh — bash — 80x24</span>
-          <span>UTF-8</span>
-        </div>
-        <div class="terminal-body">
-          <div class="cmd-line">
-            <span>$ whoami --verbose --engineering</span>
-            <span class="prompt-cursor"></span>
-          </div>
+    <!-- ====================================================================
+         SECTION 1: ABOUT ME (HERO VIEWPORT SCREEN)
+         ==================================================================== -->
+    <section class="section-wrap hero-screen" id="about">
+      
+      <!-- Symmetrical Rule Header -->
+      <div class="section-header-rule">
+        <h2 class="section-title" data-i18n="sec_about_title">ABOUT <span class="accent-word">ME</span></h2>
+      </div>
+      <p class="section-subtitle" data-i18n="sec_about_sub">
+        Computer Science student focused on backend systems, clean architecture, and practical engineering.
+      </p>
 
-          <h1 class="hero-name">Fernando Rodríguez Rada</h1>
-          <div class="hero-role">&gt; Senior Backend &amp; Systems Engineer</div>
-          
-          <p class="hero-desc">
-            I engineer resilient backend platforms, sub-second API pipelines, and local-first architectures. Specialized in high-concurrency PHP 8.4/8.2+ runtimes, MariaDB query profiling and relational schema design, real-time WebSocket state synchronization, and zero-overhead static web systems.
+      <!-- 2-Column Editorial Split -->
+      <div class="about-split">
+        
+        <!-- Left: Polaroid Printed Photo Frame -->
+        <div class="polaroid-frame">
+          <div class="polaroid-photo">
+            <img src="assets/avatar.svg" alt="Fernando Rodríguez Rada" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="polaroid-monogram" style="display:none;" aria-hidden="true">FR</div>
+          </div>
+          <div class="polaroid-caption" data-i18n="polaroid_caption">FERNANDO &bull; GUATIRE, VE</div>
+        </div>
+
+        <!-- Right: Grounded First-Person Bio -->
+        <div class="about-narrative">
+          <p class="about-intro-lead" data-i18n="about_lead">
+            Hi! I'm Fernando Rodríguez, a Computer Science student at IUTECP living in Guatire, Miranda, Venezuela.
           </p>
-
-          <!-- System Specification Matrix -->
-          <table class="spec-matrix" aria-label="Technical Specifications Matrix">
-            <tbody>
-              <tr>
-                <th scope="row">Core Runtimes</th>
-                <td><code>PHP 8.4 / 8.2 (PDO, FPM)</code>, <code>Node.js (Fastify 5)</code>, <code>Rust (Systems &amp; TUI)</code>, <code>Python 3</code></td>
-              </tr>
-              <tr>
-                <th scope="row">Data Engines</th>
-                <td><code>MariaDB 11.8 (Schema design, indexing, execution plans)</code>, <code>PostgreSQL / Neon (Serverless)</code></td>
-              </tr>
-              <tr>
-                <th scope="row">Protocols &amp; Sync</th>
-                <td><code>WebSockets (Host-authoritative time sync, drift correction)</code>, <code>RESTful APIs</code>, <code>PWA Service Workers</code></td>
-              </tr>
-              <tr>
-                <th scope="row">Infrastructure &amp; Ops</th>
-                <td><code>Linux (Debian/Ubuntu)</code>, <code>Docker &amp; Compose</code>, <code>Nginx</code>, <code>DDEV</code>, <code>Git Worktrees</code></td>
-              </tr>
-            </tbody>
-          </table>
-
-          <div class="action-row">
-            <a href="#flagships" class="btn-terminal primary">
-              <svg class="icon-svg" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 12l-5-5 1.4-1.4L7 8.2V2h2v6.2l2.6-2.6L13 7l-5 5zm-6 2h12v2H2v-2z"/></svg>
-              Explore Flagships
+          <p class="about-body-text" data-i18n="about_p1">
+            I build practical web applications, backend services, and developer tools. I enjoy working on projects with real constraints—whether that's handling currency volatility with local-first offline storage, automating university attendance with ephemeral QR codes, or keeping audio in sync across international latencies.
+          </p>
+          <p class="about-body-text" data-i18n="about_p2">
+            I focus on clean code, database modeling, and software that genuinely works in everyday situations without unnecessary complexity.
+          </p>
+          
+          <div class="about-actions">
+            <a href="#work" class="btn btn-primary" data-i18n="btn_view_projects">View Projects</a>
+            <a href="https://github.com/fernandorodriguezrada" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <span>GitHub</span>
+              <svg class="lucide lucide-trail" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
             </a>
-            <a href="#cli" class="btn-terminal" id="open-cli-btn">
-              <svg class="icon-svg" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 3h12v10H2V3zm1 1v8h10V4H3zm2 2l3 2-3 2v-1l1.5-1L5 7V6zm4 4h3v1H9v-1z"/></svg>
-              Open Interactive CLI
-            </a>
-            <a href="mailto:fernandorodriguezrada@gmail.com" class="btn-terminal green">
-              <svg class="icon-svg" viewBox="0 0 16 16" aria-hidden="true"><path d="M1 3h14v10H1V3zm1 1v1.2l6 3.6 6-3.6V4H2zm12 8V6.4L8 10 2 6.4V12h12z"/></svg>
-              Direct Email
-            </a>
-            <a href="https://github.com/fernandorodriguezrada" target="_blank" rel="noopener noreferrer" class="btn-terminal">
-              <svg class="icon-svg" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-              GitHub ↗
-            </a>
+            <button type="button" class="btn btn-secondary" id="copy-email-hero">
+              <svg class="lucide lucide-lead" viewBox="0 0 24 24" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+              <span data-i18n="btn_copy_email">Copy Email</span>
+            </button>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- Section 2: Flagship Case Studies ("The Big 3") -->
-    <section class="section-wrap" id="flagships">
-      <div class="section-head">
-        <div>
-          <h2 class="section-title"><span class="hash-symbol">#</span> Flagship Case Studies</h2>
+    <!-- Sub-row Section: Things I Enjoy & What I Can Do -->
+    <section class="subrow-section" id="interests">
+      <div class="about-subrow">
+        
+        <!-- Left Card: Things I Enjoy -->
+        <div class="subrow-card">
+          <h3 class="subrow-title">
+            <span class="title-bullet" aria-hidden="true">&#9670;</span>
+            <span data-i18n="enjoy_title">Things I Enjoy</span>
+          </h3>
+          <ul class="enjoy-list">
+            <li class="enjoy-item">
+              <!-- Lucide Terminal Icon -->
+              <svg class="lucide lucide-lg" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
+              <span data-i18n="enjoy_1">Linux &amp; Open-Source Tools</span>
+            </li>
+            <li class="enjoy-item">
+              <!-- Lucide Database Icon -->
+              <svg class="lucide lucide-lg" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+              <span data-i18n="enjoy_2">Backend Architecture &amp; Data Modeling</span>
+            </li>
+            <li class="enjoy-item">
+              <!-- Lucide Headphones Icon -->
+              <svg class="lucide lucide-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></svg>
+              <span data-i18n="enjoy_3">Music Listening &amp; Tactical Gaming</span>
+            </li>
+          </ul>
         </div>
-        <span class="section-meta">Production-Grade Distributed Architectures [3 Selected]</span>
-      </div>
 
-      <div class="flagship-list">
+        <!-- Right Card: What I Can Do -->
+        <div class="subrow-card">
+          <h3 class="subrow-title">
+            <span class="title-bullet" aria-hidden="true">&#9670;</span>
+            <span data-i18n="cando_title">What I Can Do</span>
+          </h3>
+          <ul class="cando-grid">
+            <li class="cando-item">
+              <span class="cando-plus" aria-hidden="true">+</span>
+              <span data-i18n="cando_1">PHP &amp; Backend Systems</span>
+            </li>
+            <li class="cando-item">
+              <span class="cando-plus" aria-hidden="true">+</span>
+              <span data-i18n="cando_2">SQL &amp; MariaDB Modeling</span>
+            </li>
+            <li class="cando-item">
+              <span class="cando-plus" aria-hidden="true">+</span>
+              <span data-i18n="cando_3">Real-Time WebSockets</span>
+            </li>
+            <li class="cando-item">
+              <span class="cando-plus" aria-hidden="true">+</span>
+              <span data-i18n="cando_4">Offline-First PWAs</span>
+            </li>
+            <li class="cando-item">
+              <span class="cando-plus" aria-hidden="true">+</span>
+              <span data-i18n="cando_5">RESTful APIs &amp; Web Apps</span>
+            </li>
+            <li class="cando-item">
+              <span class="cando-plus" aria-hidden="true">+</span>
+              <span data-i18n="cando_6">Linux &amp; Server Ops</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 2: SELECTED WORK ("THE BIG 3" STUDIO CARDS)
+         ==================================================================== -->
+    <section class="section-wrap" id="work">
+      
+      <!-- Symmetrical Rule Header -->
+      <div class="section-header-rule">
+        <h2 class="section-title" data-i18n="sec_work_title">SELECTED <span class="accent-word">WORK</span></h2>
+      </div>
+      <p class="section-subtitle" data-i18n="sec_work_sub">
+        Three production applications where I solved real architectural, performance, and security challenges.
+      </p>
+
+      <div class="flagships-container">
 
         <!-- Flagship 1: Cambi -->
-        <article class="flagship-card" id="flagship-cambi">
-          <header class="flagship-header">
-            <div class="flagship-identity">
-              <span class="flagship-index">[01/03]</span>
-              <h3 class="flagship-name">Cambi</h3>
+        <article class="studio-card">
+          <div class="studio-card-header">
+            <div class="project-title-group">
+              <img src="assets/logo-cambi.webp" alt="Cambi logo" class="project-icon-badge">
+              <h3 class="project-title">Cambi</h3>
             </div>
-            <div class="tag-list">
-              <span class="tag green">PWA</span>
-              <span class="tag accent">PHP 8.4</span>
-              <span class="tag">LOCAL-FIRST</span>
-              <span class="tag">VANILLA ES6+</span>
-              <span class="tag">SERVICE WORKER</span>
-            </div>
-          </header>
-          
-          <div class="flagship-body">
-            <h4 class="flagship-tagline">Real-Time Currency Engine &amp; Local-First Payment Manager</h4>
-            <p class="flagship-summary">
-              A high-performance progressive web app engineered to solve acute currency volatility and mobile payment friction in Venezuela. Features automated background scraping of Central Bank (BCV) official USD/EUR rates with multi-source fallback chains, a dynamic mathematical expression engine with subtotal preview, and an offline-first Pago Móvil manager that guarantees complete user privacy.
-            </p>
+            <span class="project-category-badge" data-i18n="cambi_badge">Progressive Web App</span>
+          </div>
 
-            <!-- Schematic Diagram -->
-            <div class="schematic-box">
-              <div class="schematic-header">
-                <svg class="icon-svg" viewBox="0 0 16 16" aria-hidden="true"><path d="M1 2h14v3H1V2zm0 4h14v3H1V6zm0 4h14v3H1v-3z"/></svg>
-                System Architecture &amp; Data Pipeline
-              </div>
-              <div class="schematic-diagram"><span class="hl-node">[ BCV Official Portal ]</span>
-          │
-          ▼ (cURL with SSL fallback + multi-tier scrapers)
-<span class="hl-node">[ PHP 8.4 Background Cron ]</span> ──▶ <span class="hl-accent">[ cache.json / history.json ]</span>
-          │
-          ▼ (REST API Endpoint / JSON cache)
-<span class="hl-node">[ Client PWA / Service Worker (Offline Cache) ]</span>
-          │
-          ├─▶ <span class="hl-pipe">Dynamic Formula Parser</span> (live subtotal pre-eval)
-          └─▶ <span class="hl-pipe">Local-First Pago Móvil</span> (localStorage only, zero PII to server)
-                    │
-                    ▼
-              <span class="hl-accent">[ Offline Canvas QR &amp; WhatsApp Clipboard Formatter ]</span></div>
+          <div class="project-narrative-grid">
+            <div class="narrative-block">
+              <p class="project-tagline" data-i18n="cambi_tagline">
+                Real-time currency converter and local-first payment manager solving everyday transaction friction in Venezuela.
+              </p>
+              <h4 data-i18n="lbl_problem">The Problem</h4>
+              <p data-i18n="cambi_p_prob">
+                In Venezuela, official foreign exchange rates fluctuate constantly, and everyday mobile banking payments (Pago Móvil) require tedious copy-pasting of account numbers, national IDs, and bank codes. Poor cellular connectivity frequently interrupts transactions right at the checkout counter.
+              </p>
             </div>
 
-            <!-- Engineering Highlights Grid -->
-            <div class="insights-grid">
-              <div class="insight-card">
-                <h5 class="insight-title"><span class="bullet">■</span> Zero-PII Storage Architecture</h5>
-                <p class="insight-desc">
-                  Sensitive banking records, national identity numbers, and phone credentials reside purely inside client-side <code>localStorage</code>. No remote database stores user financial records, eliminating vulnerability surface area and enabling 100% offline QR generation.
-                </p>
-              </div>
-              <div class="insight-card">
-                <h5 class="insight-title"><span class="bullet">■</span> Formula Parser &amp; Custom Caret</h5>
-                <p class="insight-desc">
-                  Processes compound mathematical formulas in real-time (e.g. <code>50 + 20 - 5 * 2</code>) with live subtotal calculation and bi-directional VES/USD conversion. Features a custom hit-tested pulsing caret with mobile touch support.
-                </p>
-              </div>
-              <div class="insight-card">
-                <h5 class="insight-title"><span class="bullet">■</span> Resilient Background Scraper</h5>
-                <p class="insight-desc">
-                  The automated PHP cron worker utilizes multi-tier fallback chains and atomic JSON writes. If upstream BCV portal response structures fluctuate, cached historical rates keep user interfaces continuously operational.
-                </p>
-              </div>
+            <div class="narrative-block">
+              <h4 data-i18n="lbl_how_it_works">How It Works</h4>
+              <p data-i18n="cambi_p_work1">
+                A background PHP 8.4 cron worker scrapes official Central Bank (BCV) rates with automated fallback scrapers, caching rates in atomic local JSON files. The interface runs on Vanilla ES6+ and a Service Worker for 100% offline access.
+              </p>
+              <p data-i18n="cambi_p_work2">
+                The Pago Móvil manager stores all sensitive banking records purely in browser localStorage (zero PII sent to any server), instantly generating offline QR codes and clean WhatsApp payment summaries.
+              </p>
             </div>
+          </div>
 
-            <footer class="flagship-footer">
-              <div class="flagship-links">
-                <a href="https://cambibak.rf.gd/" target="_blank" rel="noopener noreferrer" class="btn-terminal primary">
-                  <svg class="icon-svg" viewBox="0 0 16 16" aria-hidden="true"><path d="M14 2H8v2h4.6L7.3 9.3l1.4 1.4L14 5.4V10h2V2zM2 4h4v2H2v8h8v-4h2v4a2 2 0 01-2 2H2a2 2 0 01-2-2V6a2 2 0 012-2z"/></svg>
-                  Live Application (cambibak.rf.gd) ↗
-                </a>
-              </div>
-              <div class="metric-strip">
-                <div class="metric-item">PII Footprint: <span>0 bytes (Client-side)</span></div>
-                <div class="metric-item">Offline QR: <span>100% Local</span></div>
-                <div class="metric-item">Runtime: <span>PHP 8.4</span></div>
-              </div>
-            </footer>
+          <div class="tech-tag-list">
+            <span class="tech-tag">PHP 8.4</span>
+            <span class="tech-tag">Vanilla JS (ES6+)</span>
+            <span class="tech-tag">Service Worker (PWA)</span>
+            <span class="tech-tag">Local-First Storage</span>
+            <span class="tech-tag">DDEV</span>
+          </div>
+
+          <div class="studio-card-footer">
+            <div class="footer-action-links">
+              <a href="https://cambibak.rf.gd/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <span data-i18n="cambi_btn_live">Live Application (cambibak.rf.gd)</span>
+                <!-- Lucide External Link Icon -->
+                <svg class="lucide lucide-trail" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+              </a>
+              <a href="https://github.com/fernandorodriguezrada/cambi" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <span data-i18n="cambi_btn_repo">View Repository Details</span>
+                <!-- Lucide Github Icon -->
+                <svg class="lucide lucide-trail" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              </a>
+            </div>
+            <span class="footer-metric-note" data-i18n="cambi_note">Zero-PII server footprint &bull; 100% offline QR</span>
           </div>
         </article>
 
         <!-- Flagship 2: QR_IUTECP -->
-        <article class="flagship-card" id="flagship-qr">
-          <header class="flagship-header">
-            <div class="flagship-identity">
-              <span class="flagship-index">[02/03]</span>
-              <h3 class="flagship-name">QR_IUTECP</h3>
+        <article class="studio-card">
+          <div class="studio-card-header">
+            <div class="project-title-group">
+              <img src="assets/logo-qr.png" alt="QR_IUTECP logo" class="project-icon-badge">
+              <h3 class="project-title">QR_IUTECP</h3>
             </div>
-            <div class="tag-list">
-              <span class="tag green">INSTITUTIONAL</span>
-              <span class="tag accent">PHP 8.2+ PDO</span>
-              <span class="tag">MARIADB 11.8</span>
-              <span class="tag">PDS SKELETON</span>
-              <span class="tag">DOCKER</span>
-              <span class="tag">RBAC</span>
-            </div>
-          </header>
+            <span class="project-category-badge" data-i18n="qr_badge">Institutional Platform</span>
+          </div>
 
-          <div class="flagship-body">
-            <h4 class="flagship-tagline">University Attendance Management &amp; Ephemeral Security Engine</h4>
-            <p class="flagship-summary">
-              An institutional web platform developed for the Instituto Universitario de Tecnología Elías Calixto Pompa (IUTECP) to eliminate manual paper attendance fraud. Replaces traditional paper sign-in sheets with ephemeral, cryptographically salted QR session codes, real-time in-browser video stream decoding, and a strict 4-stage validation pipeline.
-            </p>
-
-            <!-- Schematic Diagram -->
-            <div class="schematic-box">
-              <div class="schematic-header">
-                <svg class="icon-svg" viewBox="0 0 16 16" aria-hidden="true"><path d="M1 2h14v3H1V2zm0 4h14v3H1V6zm0 4h14v3H1v-3z"/></svg>
-                4-Stage Verification Engine &amp; Security Pipeline
-              </div>
-              <div class="schematic-diagram"><span class="hl-node">[ Teacher Portal ]</span> ──▶ <span class="hl-node">[ Generate Session ]</span> ──▶ <span class="hl-accent">32-char Cryptographic Token (5m TTL)</span>
-                                                          │
-                                                          ▼
-<span class="hl-node">[ Student Mobile ]</span> ──▶ <span class="hl-pipe">[ jsQR Camera Stream ]</span> ──▶ Decoded Token Payload
-                                                          │
-                                                          ▼ (POST /escanear_qr.php)
-┌──────────────────────────────────────────────────────────┴────────────────────────┐
-│ <span class="hl-node">4-Stage Strict Verification Engine:</span>                                               │
-│ 1. <span class="hl-accent">Token Existence</span>  : Session record found in `sesiones_qr`                       │
-│ 2. <span class="hl-accent">Server Date Lock</span> : Current timestamp matches authorized course schedule        │
-│ 3. <span class="hl-accent">Active Countdown</span> : Elapsed time &lt; 5-minute expiration deadline                 │
-│ 4. <span class="hl-accent">Enrollment Check</span> : Student has `Activa` status in `inscripciones` for course   │
-└──────────────────────────────────────────────────────────┬────────────────────────┘
-                                                          │
-                                   ┌──────────────────────┴──────────────────────┐
-                                   ▼                                             ▼
-                         <span class="hl-accent">[ Record "Presente" ]</span>                         <span class="hl-pipe">[ Reject + Log Audit ]</span>
-                         (Timestamp + Audit IP)                        (Reason + Security Log)</div>
+          <div class="project-narrative-grid">
+            <div class="narrative-block">
+              <p class="project-tagline" data-i18n="qr_tagline">
+                University attendance management platform replacing vulnerable paper sign-in sheets with ephemeral QR verification.
+              </p>
+              <h4 data-i18n="lbl_problem">The Problem</h4>
+              <p data-i18n="qr_p_prob">
+                Paper attendance sheets at IUTECP were prone to proxy signing by absent students, took up valuable class time, and required professors to manually transcribe hundreds of attendance marks into administrative records at the end of every term.
+              </p>
             </div>
 
-            <!-- Engineering Highlights Grid -->
-            <div class="insights-grid">
-              <div class="insight-card">
-                <h5 class="insight-title"><span class="bullet">■</span> PDS Skeleton Architecture</h5>
-                <p class="insight-desc">
-                  Strict separation of concerns where only <code>public/</code> is exposed to the Nginx document root. All application logic, database credentials, and session handlers inside <code>includes/</code> are physically inaccessible via web requests through server-level denials.
-                </p>
-              </div>
-              <div class="insight-card">
-                <h5 class="insight-title"><span class="bullet">■</span> Anti-Proxy Camera Enforcement</h5>
-                <p class="insight-desc">
-                  Requires hardware camera stream decoding directly in the browser via <code>jsQR</code>. Completely disallows photo uploads from device galleries, preventing remote proxy scanning via forwarded screenshots.
-                </p>
-              </div>
-              <div class="insight-card">
-                <h5 class="insight-title"><span class="bullet">■</span> Custom CLI Tooling</h5>
-                <p class="insight-desc">
-                  Includes native terminal maintenance tools: idempotent SQL schema migration runner (<code>bin/migrate.php</code>), test data seeders (<code>bin/seed.php</code>), and Debian/Ubuntu static IP network provisioning scripts.
-                </p>
-              </div>
+            <div class="narrative-block">
+              <h4 data-i18n="lbl_how_it_works">How It Works</h4>
+              <p data-i18n="qr_p_work1">
+                Built following the PDS Skeleton standard to isolate web-accessible files from private application logic. When class starts, a professor generates an ephemeral session backed by a 32-character cryptographic token with a strict 5-minute countdown timer.
+              </p>
+              <p data-i18n="qr_p_work2">
+                Students scan the projected code via an in-browser camera stream (jsQR). The server validates 4 strict conditions: token existence, server schedule date, active countdown TTL, and verified course enrollment before recording attendance. Includes custom CLI tools (bin/migrate.php and bin/seed.php).
+              </p>
             </div>
+          </div>
 
-            <footer class="flagship-footer">
-              <div class="flagship-links">
-                <span class="status-badge active">Deployed for IUTECP University</span>
-              </div>
-              <div class="metric-strip">
-                <div class="metric-item">Verification: <span>4 Strict Checks</span></div>
-                <div class="metric-item">Session TTL: <span>5-Minute Expiry</span></div>
-                <div class="metric-item">Schema: <span>MariaDB 11.8 Relational</span></div>
-              </div>
-            </footer>
+          <div class="tech-tag-list">
+            <span class="tech-tag">PHP 8.2+ PDO</span>
+            <span class="tech-tag">MariaDB 11.8</span>
+            <span class="tech-tag">PDS Skeleton</span>
+            <span class="tech-tag">jsQR Camera Stream</span>
+            <span class="tech-tag">CLI Migrations</span>
+            <span class="tech-tag">Docker</span>
+          </div>
+
+          <div class="studio-card-footer">
+            <div class="footer-action-links">
+              <a href="https://asistenciasiutecp.rf.gd/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <span data-i18n="qr_btn_live">Live Application (asistenciasiutecp.rf.gd)</span>
+                <!-- Lucide External Link Icon -->
+                <svg class="lucide lucide-trail" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+              </a>
+              <a href="https://github.com/fernandorodriguezrada/qr_iutecp" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <span data-i18n="qr_btn_repo">View Repository Details</span>
+                <!-- Lucide Github Icon -->
+                <svg class="lucide lucide-trail" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              </a>
+            </div>
+            <span class="footer-metric-note" data-i18n="qr_note">4-stage validation filter &bull; Anti-proxy camera check</span>
           </div>
         </article>
 
         <!-- Flagship 3: Together -->
-        <article class="flagship-card" id="flagship-together">
-          <header class="flagship-header">
-            <div class="flagship-identity">
-              <span class="flagship-index">[03/03]</span>
-              <h3 class="flagship-name">Together</h3>
+        <article class="studio-card">
+          <div class="studio-card-header">
+            <div class="project-title-group">
+              <img src="assets/logo-together.svg" alt="Together logo" class="project-icon-badge">
+              <h3 class="project-title">Together</h3>
             </div>
-            <div class="tag-list">
-              <span class="tag green">FASTIFY 5</span>
-              <span class="tag accent">WEBSOCKET</span>
-              <span class="tag">POSTGRESQL / NEON</span>
-              <span class="tag">REACT 18</span>
-              <span class="tag">DOCKER</span>
-              <span class="tag">RENDER</span>
-            </div>
-          </header>
+            <span class="project-category-badge" data-i18n="together_badge">Real-Time Web Platform</span>
+          </div>
 
-          <div class="flagship-body">
-            <h4 class="flagship-tagline">Cross-Continental Host-Authoritative Synchronized Media Platform</h4>
-            <p class="flagship-summary">
-              A real-time collaborative media streaming platform engineered for synchronized music listening across international latencies (rigorously tested between Venezuela and Lithuania). Employs a custom host-authoritative WebSocket synchronization engine, dynamic drift correction, and serverless PostgreSQL persistence.
-            </p>
-
-            <!-- Schematic Diagram -->
-            <div class="schematic-box">
-              <div class="schematic-header">
-                <svg class="icon-svg" viewBox="0 0 16 16" aria-hidden="true"><path d="M1 2h14v3H1V2zm0 4h14v3H1V6zm0 4h14v3H1v-3z"/></svg>
-                Host-Authoritative Time Sync &amp; Drift Correction Protocol
-              </div>
-              <div class="schematic-diagram"><span class="hl-node">Host (DJ Client)</span>                  <span class="hl-node">Fastify 5 WebSocket Gateway</span>                    <span class="hl-node">Guest (Client)</span>
-   │                                           │                                       │
-   ├── [ play / seek: t=42.5s ] ─────────────▶ │                                       │
-   │                                           ├── <span class="hl-pipe">[ broadcast: anchor {t:42.5, s} ]</span> ─▶│
-   │                                           │                                       │
-   │   <span class="hl-accent">RTT &amp; Offset Estimation:</span>                │   <span class="hl-accent">RTT &amp; Offset Estimation:</span>            │
-   ├── [ ping {t: clientTime} ] ─────────────▶ │ ◀── [ ping {t: clientTime} ] ─────────┤
-   │ ◀── [ pong {t, serverTime} ] ─────────────┤ ──── [ pong {t, serverTime} ] ───────▶│
-   │                                           │                                       │
-   │                                           │   <span class="hl-pipe">Drift Correction Loop:</span>              │
-   │                                           │   If |localTime - expected| &gt; 5.0s    │
-   │                                           │   ──▶ <span class="hl-accent">Hard Seek</span>                       │
-   │                                           │   Else                                │
-   │                                           │   ──▶ <span class="hl-accent">Micro-rate adjust (playbackRate)</span>│</div>
+          <div class="project-narrative-grid">
+            <div class="narrative-block">
+              <p class="project-tagline" data-i18n="together_tagline">
+                Listen to music in sync with a friend across the world via host-authoritative WebSockets and dynamic drift correction.
+              </p>
+              <h4 data-i18n="lbl_problem">The Problem</h4>
+              <p data-i18n="together_p_prob">
+                Listening to synchronized music across international distances (tested between Venezuela and Lithuania) is tricky: network jitter, latency spikes, and browser timing discrepancies cause playback to drift out of sync within minutes.
+              </p>
             </div>
 
-            <!-- Engineering Highlights Grid -->
-            <div class="insights-grid">
-              <div class="insight-card">
-                <h5 class="insight-title"><span class="bullet">■</span> Host-Authoritative Anchors</h5>
-                <p class="insight-desc">
-                  Media playback actions broadcast authoritative state anchors (<code>videoTime</code> + server clock <code>anchorTime</code>). Connected clients compute exact playback position continuously, eliminating the bandwidth requirement of raw audio streaming.
-                </p>
-              </div>
-              <div class="insight-card">
-                <h5 class="insight-title"><span class="bullet">■</span> Dynamic Drift Correction</h5>
-                <p class="insight-desc">
-                  Periodic <code>ping</code>/<code>pong</code> packets measure round-trip time (RTT) and clock offset. The client loop detects drift: if deviation exceeds 5.0s, a seamless hard-seek occurs; otherwise, subtle playback rate adjustments maintain sync without audible interruption.
-                </p>
-              </div>
-              <div class="insight-card">
-                <h5 class="insight-title"><span class="bullet">■</span> Room State Machine &amp; Failover</h5>
-                <p class="insight-desc">
-                  Manages collaborative lobbies using unambiguous 6-character room codes. Incorporates granular DJ control permissions, YouTube Data API quota caching, and automated host migration timers to keep rooms active when a host temporarily drops connection.
-                </p>
-              </div>
+            <div class="narrative-block">
+              <h4 data-i18n="lbl_how_it_works">How It Works</h4>
+              <p data-i18n="together_p_work1">
+                Engineered a custom host-authoritative WebSocket synchronization engine with Fastify 5. When the host (DJ) plays, pauses, or seeks, the server broadcasts an authoritative time anchor (current video time + exact server timestamp).
+              </p>
+              <p data-i18n="together_p_work2">
+                Clients run an automated 5-second drift correction loop: small millisecond offsets are smoothed by micro-adjusting the playback rate, while discrepancies greater than 5 seconds trigger a seamless hard seek. Manages rooms with 6-character codes, YouTube Data API quota caching, and serverless Postgres on Neon.
+              </p>
             </div>
+          </div>
 
-            <footer class="flagship-footer">
-              <div class="flagship-links">
-                <span class="status-badge active">Engineered for Cross-Continental Sync</span>
-              </div>
-              <div class="metric-strip">
-                <div class="metric-item">Drift Tolerance: <span>&plusmn;5s Dynamic Loop</span></div>
-                <div class="metric-item">Persistence: <span>Postgres (Neon)</span></div>
-                <div class="metric-item">Stack: <span>Fastify 5 + WebSockets</span></div>
-              </div>
-            </footer>
+          <div class="tech-tag-list">
+            <span class="tech-tag">Fastify 5</span>
+            <span class="tech-tag">WebSockets</span>
+            <span class="tech-tag">PostgreSQL (Neon)</span>
+            <span class="tech-tag">React 18</span>
+            <span class="tech-tag">Vite</span>
+            <span class="tech-tag">Docker Compose</span>
+          </div>
+
+          <div class="studio-card-footer">
+            <div class="footer-action-links">
+              <a href="https://together-78s9.onrender.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <span data-i18n="together_btn_live">Live Application (together-78s9.onrender.com)</span>
+                <!-- Lucide External Link Icon -->
+                <svg class="lucide lucide-trail" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+              </a>
+              <a href="https://github.com/fernandorodriguezrada/together" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <span data-i18n="together_btn_repo">View Repository Details</span>
+                <!-- Lucide Github Icon -->
+                <svg class="lucide lucide-trail" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              </a>
+            </div>
+            <span class="footer-metric-note" data-i18n="together_note">Tested cross-continentally (VE &harr; LT) &bull; &plusmn;5s dynamic drift correction</span>
           </div>
         </article>
 
       </div>
+
+      <!-- Secondary Projects Directory (Clean 2-Column Grid) -->
+      <div style="margin-top: 5rem;">
+        <div class="section-header-rule">
+          <h3 class="section-title" data-i18n="sec_other_title" style="font-size: 1.4rem;">OTHER <span class="accent-word">PROJECTS</span></h3>
+        </div>
+        <p class="section-subtitle" data-i18n="sec_other_sub">
+          Terminal utilities, backend microservices, and specialized web tools.
+        </p>
+
+        <div class="secondary-grid">
+          
+          <!-- Playful -->
+          <article class="directory-card">
+            <div>
+              <div class="directory-top">
+                <h4 class="directory-title">Playful</h4>
+                <span class="directory-type" data-i18n="type_playful">Rust &bull; CLI</span>
+              </div>
+              <p class="directory-desc" data-i18n="playful_desc">
+                A lightweight, keyboard-driven terminal music player for Kitty terminal built in Rust using ratatui and mpv, featuring embedded cover art rendering via Kitty graphics protocol.
+              </p>
+            </div>
+            <div class="directory-tags">
+              <span class="tech-tag">Rust</span>
+              <span class="tech-tag">ratatui (TUI)</span>
+              <span class="tech-tag">mpv</span>
+              <span class="tech-tag">Kitty Protocol</span>
+            </div>
+          </article>
+
+          <!-- Terra -->
+          <article class="directory-card">
+            <div>
+              <div class="directory-top">
+                <h4 class="directory-title">Terra</h4>
+                <span class="directory-type" data-i18n="type_terra">Backend Service</span>
+              </div>
+              <p class="directory-desc" data-i18n="terra_desc">
+                Real-time seismic activity monitoring service aggregating earthquake data feeds from Funvisis and USGS with MariaDB caching, geo coordinates, and automated updates.
+              </p>
+            </div>
+            <div class="directory-tags">
+              <span class="tech-tag">PHP 8.4</span>
+              <span class="tech-tag">MariaDB 11.8</span>
+              <span class="tech-tag">GeoJSON</span>
+              <span class="tech-tag">REST API</span>
+            </div>
+          </article>
+
+          <!-- Colmena -->
+          <article class="directory-card">
+            <div>
+              <div class="directory-top">
+                <h4 class="directory-title">Colmena</h4>
+                <span class="directory-type" data-i18n="type_colmena">Web Application</span>
+              </div>
+              <p class="directory-desc" data-i18n="colmena_desc">
+                Modular business management system featuring custom request routing, relational database storage for operational records, and automated transactional PDF invoice generation.
+              </p>
+            </div>
+            <div class="directory-tags">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MariaDB</span>
+              <span class="tech-tag">TCPDF</span>
+              <span class="tech-tag">Custom Router</span>
+            </div>
+          </article>
+
+          <!-- Mercader FBA -->
+          <article class="directory-card">
+            <div>
+              <div class="directory-top">
+                <h4 class="directory-title">Mercader FBA</h4>
+                <span class="directory-type" data-i18n="type_mercader">Analytics App</span>
+              </div>
+              <p class="directory-desc" data-i18n="mercader_desc">
+                Amazon FBA profitability analyzer and margin calculator designed for international sellers operating through US entities, factoring in customs, referral fees, and freight costs.
+              </p>
+            </div>
+            <div class="directory-tags">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Financial Engine</span>
+            </div>
+          </article>
+
+          <!-- Python Monitor -->
+          <article class="directory-card">
+            <div>
+              <div class="directory-top">
+                <h4 class="directory-title">Python Monitor</h4>
+                <span class="directory-type" data-i18n="type_python">Microservice</span>
+              </div>
+              <p class="directory-desc" data-i18n="python_desc">
+                Currency exchange rate scraper and microservice built with Flask, providing automated daily rate parsing and clean JSON metrics REST endpoints for client applications.
+              </p>
+            </div>
+            <div class="directory-tags">
+              <span class="tech-tag">Python 3</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Web Scraping</span>
+              <span class="tech-tag">JSON API</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
     </section>
 
-    <!-- Section 3: Systems & Engineering Archive -->
-    <section class="section-wrap" id="archive">
-      <div class="section-head">
-        <div>
-          <h2 class="section-title"><span class="hash-symbol">#</span> Systems &amp; Engineering Archive</h2>
-        </div>
-        <span class="section-meta">Secondary Tools, CLI Utilities, and Microservices</span>
+    <!-- ====================================================================
+         SECTION 3: SKILLS & TOOLS
+         ==================================================================== -->
+    <section class="section-wrap" id="skills">
+      
+      <!-- Symmetrical Rule Header -->
+      <div class="section-header-rule">
+        <h2 class="section-title" data-i18n="sec_skills_title">SKILLS &amp; <span class="accent-word">TOOLS</span></h2>
       </div>
+      <p class="section-subtitle" data-i18n="sec_skills_sub">
+        Technologies, storage engines, and developer tools I work with daily.
+      </p>
 
-      <div class="table-responsive">
-        <table class="archive-table" aria-label="Secondary Systems Archive Table">
-          <thead>
-            <tr>
-              <th scope="col">System</th>
-              <th scope="col">Stack / Domain</th>
-              <th scope="col">Key Architectural Highlight</th>
-              <th scope="col">Category</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="project-name-cell"><span class="chevron">&gt;</span> Playful</td>
-              <td><span class="stack-badge">Rust</span> <span class="stack-badge">ratatui</span> <span class="stack-badge">mpv</span></td>
-              <td>Keyboard-driven terminal audio player utilizing the Kitty graphics protocol for embedded album art rendering and recursive directory scanning.</td>
-              <td><code>CLI Tool (TUI)</code></td>
-            </tr>
-            <tr>
-              <td class="project-name-cell"><span class="chevron">&gt;</span> Terra</td>
-              <td><span class="stack-badge">PHP 8.4</span> <span class="stack-badge">MariaDB 11.8</span></td>
-              <td>Real-time seismic activity monitoring service aggregating earthquake data feeds with geographic coordinates and database caching.</td>
-              <td><code>Backend Service</code></td>
-            </tr>
-            <tr>
-              <td class="project-name-cell"><span class="chevron">&gt;</span> Colmena</td>
-              <td><span class="stack-badge">PHP</span> <span class="stack-badge">MariaDB</span> <span class="stack-badge">TCPDF</span></td>
-              <td>Modular business management system featuring lightweight custom request routing and automated transactional PDF invoice generation.</td>
-              <td><code>Web Application</code></td>
-            </tr>
-            <tr>
-              <td class="project-name-cell"><span class="chevron">&gt;</span> Mercader FBA</td>
-              <td><span class="stack-badge">Node.js</span> <span class="stack-badge">React</span></td>
-              <td>Amazon FBA cross-border margin analyzer and profitability calculator designed for international sellers partnering with US entities.</td>
-              <td><code>Analytics App</code></td>
-            </tr>
-            <tr>
-              <td class="project-name-cell"><span class="chevron">&gt;</span> Python Monitor</td>
-              <td><span class="stack-badge">Python 3</span> <span class="stack-badge">Flask</span></td>
-              <td>Exchange rate monitoring microservice with automated scraping workers and JSON metrics REST endpoints.</td>
-              <td><code>Microservice</code></td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="skills-grid">
+
+        <!-- Languages -->
+        <div class="skills-card">
+          <h3 class="skills-group-title">
+            <span class="group-accent" aria-hidden="true">&#9670;</span>
+            <span data-i18n="skills_lang">Programming<br>Languages</span>
+          </h3>
+          <ul class="skills-items-list">
+            <li class="skills-row">
+              <span class="skills-key">PHP</span>
+              <span class="skills-val">8.4 / 8.2 (FPM, PDO)</span>
+            </li>
+            <li class="skills-row">
+              <span class="skills-key">JavaScript</span>
+              <span class="skills-val">ES6+, DOM, Vanilla</span>
+            </li>
+            <li class="skills-row">
+              <span class="skills-key">Rust</span>
+              <span class="skills-val">CLI, TUI, Systems</span>
+            </li>
+            <li class="skills-row">
+              <span class="skills-key">Python</span>
+              <span class="skills-val">Flask, Automation</span>
+            </li>
+            <li class="skills-row">
+              <span class="skills-key">SQL</span>
+              <span class="skills-val">Relational Modeling</span>
+            </li>
+            <li class="skills-row">
+              <span class="skills-key">HTML5 &amp; CSS3</span>
+              <span class="skills-val">Semantic &amp; Responsive</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Backend & Databases -->
+        <div class="skills-card">
+          <h3 class="skills-group-title">
+            <span class="group-accent" aria-hidden="true">&#9670;</span>
+            <span data-i18n="skills_backend">Backend &amp;<br>Databases</span>
+          </h3>
+          <ul class="skills-items-list">
+            <li class="skills-row">
+              <span class="skills-key">MariaDB / MySQL</span>
+              <span class="skills-val">11.8, Query Plans</span>
+            </li>
+            <li class="skills-row">
+              <span class="skills-key">PostgreSQL</span>
+              <span class="skills-val">Neon Serverless</span>
+            </li>
+            <li class="skills-row">
+              <span class="skills-key">Fastify / Node.js</span>
+              <span class="skills-val">v5, WebSocket Server</span>
+            </li>
+            <li class="skills-row">
+              <span class="skills-key">RESTful APIs</span>
+              <span class="skills-val">JSON Design</span>
+            </li>
+            <li class="skills-row">
+              <span class="skills-key">WebSockets</span>
+              <span class="skills-val">Real-Time State Sync</span>
+            </li>
+            <li class="skills-row">
+              <span class="skills-key">PWA &amp; Cache</span>
+              <span class="skills-val">Service Workers</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Environment & Tools -->
+        <div class="skills-card">
+          <h3 class="skills-group-title">
+            <span class="group-accent" aria-hidden="true">&#9670;</span>
+            <span data-i18n="skills_tools">Environment &amp;<br>Tools</span>
+          </h3>
+          <ul class="skills-items-list">
+            <li class="skills-row">
+              <span class="skills-key">Linux</span>
+              <span class="skills-val">Debian, Ubuntu, Shell</span>
+            </li>
+            <li class="skills-row">
+              <span class="skills-key">Docker</span>
+              <span class="skills-val">Docker Compose</span>
+            </li>
+            <li class="skills-row">
+              <span class="skills-key">Nginx</span>
+              <span class="skills-val">Reverse Proxy, Config</span>
+            </li>
+            <li class="skills-row">
+              <span class="skills-key">DDEV</span>
+              <span class="skills-val">Local Dev Environments</span>
+            </li>
+            <li class="skills-row">
+              <span class="skills-key">Git</span>
+              <span class="skills-val">Branches &amp; Worktrees</span>
+            </li>
+            <li class="skills-row">
+              <span class="skills-key">GitHub Pages</span>
+              <span class="skills-val">Static Deployments</span>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </section>
 
-    <!-- Section 4: Interactive CLI Drawer -->
-    <section class="section-wrap" id="cli">
-      <div class="section-head">
-        <div>
-          <h2 class="section-title"><span class="hash-symbol">#</span> Interactive Console Drawer</h2>
-        </div>
-        <span class="section-meta">Execute commands or click chips to inspect system specs</span>
-      </div>
-
-      <div class="cli-drawer">
-        <div class="cli-bar-header">
-          <span>TERMINAL :: bash [v5.2-portfolio]</span>
-          <span>Tab: Auto-complete | Up/Down: History</span>
-        </div>
-
-        <div class="cli-chips" aria-label="CLI Command Shortcuts">
-          <span class="cli-chips-label">Quick Commands:</span>
-          <button class="chip-btn" data-cmd="help">help</button>
-          <button class="chip-btn" data-cmd="cat cambi.md">cat cambi.md</button>
-          <button class="chip-btn" data-cmd="cat qr.md">cat qr.md</button>
-          <button class="chip-btn" data-cmd="cat together.md">cat together.md</button>
-          <button class="chip-btn" data-cmd="stack">stack</button>
-          <button class="chip-btn" data-cmd="whoami">whoami</button>
-          <button class="chip-btn" data-cmd="contact">contact</button>
-          <button class="chip-btn" data-cmd="clear">clear</button>
-        </div>
-
-        <div class="cli-console" id="cli-output" role="region" aria-live="polite">
-          <div class="cli-entry">
-            <div class="cli-entry-cmd">sys::init — System console ready. Type 'help' or click any chip above.</div>
-          </div>
-        </div>
-
-        <form class="cli-input-form" id="cli-form">
-          <label for="cli-input" class="cli-input-prompt">guest@portfolio:~$</label>
-          <input type="text" id="cli-input" class="cli-input" placeholder="Type a command (e.g. 'cat cambi.md', 'stack', 'contact')..." autocomplete="off" spellcheck="false">
-        </form>
-      </div>
-    </section>
-
-    <!-- Section 5: Direct Channels & Footer -->
-    <footer class="footer-wrap" id="contact">
-      <div class="contact-card">
-        <div>
-          <h2 class="contact-info-title">Let's Discuss Systems Architecture</h2>
-          <p class="contact-info-sub">
-            Open for senior backend engineering roles, high-reliability API consulting, and distributed systems design.
+    <!-- ====================================================================
+         SECTION 4: CONTACT & FOOTER
+         ==================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="contact-card-box">
+        <div class="contact-title-group">
+          <h2 data-i18n="sec_contact_title">LET'S <span class="accent-word">CONNECT</span></h2>
+          <p class="contact-lead" data-i18n="sec_contact_sub">
+            I'm currently studying Computer Science at IUTECP and actively looking for software engineering opportunities, internships, and collaborative backend or full-stack projects. Feel free to reach out.
           </p>
         </div>
-        <div class="contact-actions">
-          <a href="mailto:fernandorodriguezrada@gmail.com" class="btn-terminal primary">
-            <svg class="icon-svg" viewBox="0 0 16 16" aria-hidden="true"><path d="M1 3h14v10H1V3zm1 1v1.2l6 3.6 6-3.6V4H2zm12 8V6.4L8 10 2 6.4V12h12z"/></svg>
-            fernandorodriguezrada@gmail.com
+        <div class="contact-btns">
+          <a href="mailto:frr20122@gmail.com" class="btn btn-primary" id="email-btn">
+            <!-- Lucide Mail Icon -->
+            <svg class="lucide lucide-lead" viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span>frr20122@gmail.com</span>
           </a>
-          <a href="https://github.com/fernandorodriguezrada" target="_blank" rel="noopener noreferrer" class="btn-terminal">
-            <svg class="icon-svg" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-            github.com/fernandorodriguezrada ↗
+          <button type="button" class="btn btn-secondary" id="copy-email-btn" aria-label="Copy Email Address">
+            <!-- Lucide Copy Icon -->
+            <svg class="lucide lucide-lead" viewBox="0 0 24 24" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+            <span data-i18n="btn_copy_email">Copy Email</span>
+          </button>
+          <a href="https://github.com/fernandorodriguezrada" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <span>GitHub</span>
+            <!-- Lucide Github Icon -->
+            <svg class="lucide lucide-trail" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
           </a>
         </div>
       </div>
+    </section>
 
-      <div class="footer-bottom">
-        <div>&copy; 2026 Fernando Rodríguez Rada. Engineered with pure static HTML, CSS &amp; Vanilla JS.</div>
-        <div class="footer-stats">
-          <span>HOST: GITHUB PAGES</span>
-          <span>&bull;</span>
-          <span>STATUS: 200 OK</span>
-          <span>&bull;</span>
-          <span>ZERO FRAMEWORK BLOAT</span>
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="footer-flex">
+        <div data-i18n="footer_copy">
+          Made with ❤️ by Fernando Rodríguez Rada
+        </div>
+        <div class="footer-links-group">
+          <a href="#top" class="footer-link-item" data-i18n="footer_back_top">Back to top ↑</a>
+          <a href="https://github.com/fernandorodriguezrada" target="_blank" rel="noopener noreferrer" class="footer-link-item">GitHub</a>
         </div>
       </div>
     </footer>
 
   </main>
+
+  <!-- Bilingual Toast Message -->
+  <div class="toast-msg" id="toast" role="status" aria-live="polite">Email copied to clipboard!</div>
 
   <script src="app.js"></script>
 </body>

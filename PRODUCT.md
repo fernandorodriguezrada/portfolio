@@ -8,51 +8,43 @@ web
 
 ## Stack
 
-Plain static HTML, CSS, and modern JavaScript (no backend runtime).
+Plain static HTML5, CSS, and modern vanilla JavaScript deployed on GitHub Pages (zero server dependencies or build tooling).
 
 ## Users
 
-- **Primary:** Engineering leaders, VP/Directors of Engineering, and technical hiring managers evaluating senior backend engineering talent for high-responsibility roles.
-- **Secondary:** Technical recruiters screening for specific backend capabilities (PHP 8.4, SQL tuning, API architecture, performance).
+- **Primary:** Engineering leaders, technical hiring managers, recruiters, and collaborators evaluating an ambitious software development student for backend, full-stack, or internship roles.
+- **Secondary:** Fellow developers, students, and open-source contributors reviewing real-world application architectures, database models, and systems tooling.
 
 ## Product Purpose
 
-Demonstrate senior backend systems expertise, architectural clarity, and database optimization through a fast, distraction-free, high-performance portfolio. Success means converting visitors into technical interview conversations or architectural consultation inquiries.
+Showcase authentic technical craft, systems architecture, and database engineering through a timeless, classic studio portfolio. Success means presenting working applications and architectural decisions with total clarity, driving interview invitations, project collaborations, and professional connections.
 
 ## Positioning
 
-A senior backend engineer's portfolio that proves technical depth and engineering rigor directly through code structure, performance, and clear system breakdowns—prioritizing substance over decorative fluff.
+A timeless, craft-focused studio portfolio of Fernando Rodríguez Rada—a Computer Science student at IUTECP in Guatire, Miranda, Venezuela. Demonstrates real-world software engineering discipline (database schemas, network protocols, PWA offline resilience, and systems tooling) with thoughtful editorial typography, dual English/Spanish localization, and seamless Light/Dark themes.
 
 ## Operating Context
 
-Screening workflows on desktop and laptop displays where reviewers spend 30–60 seconds assessing technical seniority, architectural depth, and stack fit, with occasional mobile review.
+Screened across mobile, tablet, and desktop devices by reviewers who value clarity, readability, and genuine craft. Features effortless vertical scrolling, instant zero-reload language switching (`EN / ES`), and smooth theme toggling.
 
 ## Capabilities and Constraints
 
-- **Stack:** Pure static HTML5, modern CSS, and vanilla JavaScript for deployment on GitHub Pages (zero server dependencies or build tooling).
-- **Backend Domain Authority:** Systems architecture, PHP 8.4/8.2+, MariaDB 11.8 / SQL tuning, Node.js / Fastify WebSockets, Rust systems tooling, RESTful APIs, CLI tooling, and resilient real-time synchronization.
-- **Language / Locale:** English (confirmed for international GitHub Pages visibility).
-- **Case Studies Scope:** Flagship "Big 3" deep dives (Cambi, QR_IUTECP, Together) with architecture breakdowns, complemented by secondary projects (Playful, Terra, Colmena, Mercader FBA).
+- **Profile:** Fernando Rodríguez Rada — Computer Science Student at IUTECP (Instituto Universitario de Tecnología Elías Calixto Pompa), Guatire, Miranda, Venezuela.
+- **Languages:** Dual native bilingual support (`English` and `Spanish`) with zero-reload dynamic switching.
+- **Themes:** Dual-theme system defaulting to Light Mode (warm linen studio `#FAF8F5` with saddle leather light brown accent `#8C532B`), togglable to Sober Dark Mode (warm dark roast slate `#171514` with sandstone beige accent `#DEB085`).
+- **Typography:** Architectural studio pair: `Epilogue` (bold geometric display headers) + `Source Sans 3` (clean editorial body prose) + `JetBrains Mono` (technical tags/code).
+- **Core Technical Domains:** PHP 8.4/8.2+ (PDO, FPM), MariaDB 11.8 / SQL tuning, Node.js / Fastify WebSockets, Rust systems tooling, RESTful APIs, and resilient PWA architectures.
+- **Flagships ("The Big 3"):** Cambi (PWA, currency & local-first payment manager), QR_IUTECP (university attendance & security system), Together (real-time cross-continental media sync).
+- **Secondary Directory:** Playful (Rust TUI player), Terra (PHP/MariaDB seismic monitor), Colmena (PHP modular management), Mercader FBA (Amazon FBA analytics), Python Monitor (Flask currency microservice).
 
 ## Brand Commitments
 
-- **Voice:** Direct, confident, pragmatic, and technically precise.
-- **Visual Tone:** Understated, high-contrast, structured, and legible—reflecting clean architecture and high craft.
-
-## Evidence on Hand
-
-- **Flagship 1: Cambi** (PWA, live at `cambibak.rf.gd`): PHP 8.4 BCV scraper with multi-tier fallback and automated cron caching, local-first zero-server-PII Pago Móvil manager, offline QR generation, dynamic arithmetic formula calculator, Material You M3 custom caret.
-- **Flagship 2: QR_IUTECP** (University Attendance System): Institutional PDS-skeleton PHP 8.2+ PDO & MariaDB 11.8 platform, custom CLI migration & seed engines (`bin/migrate.php`), dynamic ephemeral QR generation with 32-char cryptographic tokens and 5-min TTL, browser camera decoding (`jsQR`), 4-stage strict validation filter, 3-tier RBAC (Admin, Teacher, Student), audit logging.
-- **Flagship 3: Together** (Real-Time Media Sync): Fastify 5 + `@fastify/websocket`, PostgreSQL (Neon serverless + Docker local), React 18 frontend; custom host-authoritative WebSocket synchronization engine with RTT/clock-offset estimation and 5-second drift correction, ephemeral 6-char room state machine, granular DJ permissions.
-- **Secondary Projects:**
-  - *Playful:* Rust terminal music player for Kitty terminal using `ratatui` (TUI), `mpv` audio backend, and Kitty graphics protocol album art rendering.
-  - *Terra:* Seismic activity monitoring dashboard aggregating real-time earthquake feeds with MariaDB caching.
-  - *Colmena:* Modular PHP application with custom routing architecture and automated PDF generation.
-  - *Mercader FBA:* Amazon FBA profitability and margin analysis application for cross-border merchants.
+- **Voice:** Grounded, warm, articulate, and honest. Zero inflated claims or corporate jargon.
+- **Visual Tone:** Classic studio monograph—crisp graph paper grid, Polaroid photo framing, clean horizontal rules with centered titles, sober warm beige and light brown accents, and zero AI neon slop.
 
 ## Product Principles
 
-1. **Substance over spectacle:** Prioritize architecture diagrams, data flow clarity, and technical depth over decorative distractions.
-2. **Instant technical proof:** Immediately communicate senior-level proficiency and problem-solving capability within the first viewport.
-3. **Flawless static performance:** Lightning-fast load times, zero build overhead, and accessible semantic HTML demonstrating fundamental web craft.
-4. **Honest engineering trade-offs:** Highlight real-world constraints, architectural decisions, and performance benchmarks rather than generic feature lists.
+1. **Craft over gimmicks:** Rely on timeless typography, generous whitespace, and tactile paper styling rather than trendy terminal costumes.
+2. **Accessible bilingualism:** Equal depth and natural phrasing in both English and Spanish across every project and section.
+3. **Flawless static performance:** Lightning-fast load times, zero framework bloat, and total GitHub Pages compatibility.
+4. **Honest problem solving:** Highlight the real constraints and architectural solutions behind each project.
