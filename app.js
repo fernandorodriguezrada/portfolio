@@ -64,30 +64,30 @@
       cambi_tagline: 'Real-time currency converter and local-first payment manager solving everyday transaction friction in Venezuela.',
       lbl_problem: 'The Problem',
       lbl_how_it_works: 'How It Works',
-      cambi_p_prob: 'In Venezuela, official foreign exchange rates fluctuate constantly, and everyday mobile banking payments (Pago Móvil) require tedious copy-pasting of account numbers, national IDs, and bank codes. Poor cellular connectivity frequently interrupts transactions right at the checkout counter.',
-      cambi_p_work1: 'A background PHP 8.4 cron worker scrapes official Central Bank (BCV) rates with automated fallback scrapers, caching rates in atomic local JSON files. The interface runs on Vanilla ES6+ and a Service Worker for 100% offline access.',
-      cambi_p_work2: 'The Pago Móvil manager stores all sensitive banking records purely in browser localStorage (zero PII sent to any server), instantly generating offline QR codes and clean WhatsApp payment summaries.',
-      cambi_btn_live: 'Live Application (cambibak.rf.gd)',
-      cambi_btn_repo: 'View Repository Details',
+      cambi_p_prob: 'In Venezuela, official foreign exchange rates fluctuate constantly, and everyday mobile banking payments (Pago Móvil) require tedious copy-pasting of account numbers, national IDs, and bank codes. Poor cellular connectivity frequently interrupts transactions right at checkout counters.',
+      cambi_bullet_1: 'PHP 8.4 background cron scrapes official Central Bank (BCV) rates with automated fallback scrapers, caching atomically to local JSON files.',
+      cambi_bullet_2: 'Local-first architecture keeps all sensitive payment data purely in browser localStorage (zero server PII), generating instant offline QR codes with Service Worker support.',
+      cambi_btn_live: 'Live Demo',
+      cambi_btn_repo: 'View Repository',
 
       // Flagship 2: QR_IUTECP
       qr_badge: 'Institutional Platform',
       qr_tagline: 'University attendance management platform replacing vulnerable paper sign-in sheets with ephemeral QR verification.',
       qr_p_prob: 'Paper attendance sheets at IUTECP were prone to proxy signing by absent students, took up valuable class time, and required professors to manually transcribe hundreds of attendance marks into administrative records at the end of every term.',
-      qr_p_work1: 'Built following the PDS Skeleton standard to isolate web-accessible files from private application logic. When class starts, a professor generates an ephemeral session backed by a 32-character cryptographic token with a strict 5-minute countdown timer.',
-      qr_p_work2: 'Students scan the projected code via an in-browser camera stream (jsQR). The server validates 4 strict conditions: token existence, server schedule date, active countdown TTL, and verified course enrollment before recording attendance. Includes custom CLI tools (bin/migrate.php and bin/seed.php).',
-      qr_btn_live: 'Live Application (asistenciasiutecp.rf.gd)',
-      qr_btn_repo: 'View Repository Details',
+      qr_bullet_1: 'Professors generate dynamic sessions backed by 32-character cryptographic tokens with a strict 5-minute TTL, built with PDS Skeleton and PHP 8.2+ PDO.',
+      qr_bullet_2: 'Students scan via in-browser camera stream (jsQR); server enforces a 4-point verification pipeline (token, date, TTL, course enrollment) before committing to MariaDB 11.8.',
+      qr_btn_live: 'Live Demo',
+      qr_btn_repo: 'View Repository',
       qr_btn_badge: 'Built for IUTECP University',
 
       // Flagship 3: Together
       together_badge: 'Real-Time Web Platform',
       together_tagline: 'Listen to music in sync with a friend across the world via host-authoritative WebSockets and dynamic drift correction.',
       together_p_prob: 'Listening to synchronized music across international distances (tested between Venezuela and Lithuania) is tricky: network jitter, latency spikes, and browser timing discrepancies cause playback to drift out of sync within minutes.',
-      together_p_work1: 'Engineered a custom host-authoritative WebSocket synchronization engine with Fastify 5. When the host (DJ) plays, pauses, or seeks, the server broadcasts an authoritative time anchor (current video time + exact server timestamp).',
-      together_p_work2: 'Clients run an automated 5-second drift correction loop: small millisecond offsets are smoothed by micro-adjusting the playback rate, while discrepancies greater than 5 seconds trigger a seamless hard seek. Manages rooms with 6-character codes, YouTube Data API quota caching, and serverless Postgres on Neon.',
-      together_btn_live: 'Live Application (together-78s9.onrender.com)',
-      together_btn_repo: 'View Repository Details',
+      together_bullet_1: 'Host-authoritative WebSocket engine with Fastify 5 broadcasts authoritative time anchors (video timestamp + server clock) whenever playback changes.',
+      together_bullet_2: 'Automated 5-second correction loop micro-adjusts playback rate for millisecond drift and triggers instant hard seeks for gaps > 5s. Rooms with 6-char codes and Postgres on Neon.',
+      together_btn_live: 'Live Demo',
+      together_btn_repo: 'View Repository',
 
       // Secondary Projects
       type_playful: 'Rust • CLI',
@@ -152,7 +152,7 @@
       cando_title: 'Lo Que Sé Hacer',
       cando_1: 'Frontend Moderno y UI',
       cando_2: 'PHP y Sistemas Backend',
-      cando_3: 'Modelado SQL y Bases de Datos',
+      cando_3: 'Modelado SQL y Datos',
       cando_4: 'WebSockets y Tiempo Real',
       cando_5: 'Agentes de IA y Automatización',
       cando_6: 'PWAs Offline-First',
@@ -163,18 +163,18 @@
       lbl_problem: 'El Problema',
       lbl_how_it_works: 'Cómo Funciona',
       cambi_p_prob: 'En Venezuela, las tasas de cambio oficiales varían a diario y realizar pagos móviles bancarios exige copiar y pegar números de cuenta, cédulas y códigos de banco. Además, las fallas de conexión celular suelen interrumpir las transacciones en los comercios.',
-      cambi_p_work1: 'Un worker cron en PHP 8.4 consulta las tasas oficiales del Banco Central (BCV) con scrapers de respaldo automático, almacenándolas en archivos JSON atómicos. La interfaz utiliza Vanilla JavaScript y un Service Worker para operar 100% offline.',
-      cambi_p_work2: 'El gestor de Pago Móvil guarda los datos bancarios exclusivamente en el localStorage del navegador (cero datos personales en servidores), generando códigos QR sin conexión y resúmenes limpios para WhatsApp.',
-      cambi_btn_live: 'Aplicación en Vivo (cambibak.rf.gd)',
+      cambi_bullet_1: 'Worker cron en PHP 8.4 que consulta tasas del BCV con scrapers de respaldo automático y almacenamiento atómico en archivos JSON locales.',
+      cambi_bullet_2: 'Arquitectura local-first: datos bancarios guardados en localStorage del navegador (cero datos en servidores), con generación offline de QR y Service Worker.',
+      cambi_btn_live: 'Ver Demo en Vivo',
       cambi_btn_repo: 'Ver Repositorio',
 
       // Flagship 2: QR_IUTECP
       qr_badge: 'Plataforma Institucional',
       qr_tagline: 'Sistema institucional de control de asistencia estudiantil mediante códigos QR dinámicos y temporales.',
       qr_p_prob: 'Las listas de asistencia en papel en el IUTECP eran vulnerables a firmas por terceros, quitaban tiempo valioso de clase y obligaban a los docentes a transcribir manualmente cientos de registros a las actas institucionales al final del periodo.',
-      qr_p_work1: 'Desarrollado bajo el estándar PDS Skeleton para aislar el código público de la lógica privada. El docente genera una sesión protegida por un token criptográfico de 32 caracteres con vigencia estricta de 5 minutos.',
-      qr_p_work2: 'Los alumnos escanean el código proyectado mediante la cámara en el navegador (jsQR). El servidor valida 4 filtros inviolables: existencia del token, fecha de clase, temporizador activo e inscripción formal en la asignatura. Incluye scripts CLI de migraciones y semillas.',
-      qr_btn_live: 'Aplicación en Vivo (asistenciasiutecp.rf.gd)',
+      qr_bullet_1: 'Docentes inician sesiones protegidas por tokens criptográficos de 32 caracteres con vigencia estricta de 5 minutos, bajo arquitectura PDS Skeleton y PHP 8.2+ PDO.',
+      qr_bullet_2: 'Escaneo mediante cámara en el navegador (jsQR); el backend valida 4 filtros inviolables (token, fecha, temporizador e inscripción) antes de registrar en MariaDB 11.8.',
+      qr_btn_live: 'Ver Demo en Vivo',
       qr_btn_repo: 'Ver Repositorio',
       qr_btn_badge: 'Desarrollado para el IUTECP',
 
@@ -182,9 +182,9 @@
       together_badge: 'Plataforma en Tiempo Real',
       together_tagline: 'Escucha música en perfecta sincronización con amigos en cualquier parte del mundo mediante WebSockets.',
       together_p_prob: 'Escuchar música sincronizada a larga distancia (probado entre Venezuela y Lituania) presenta dificultades: la fluctuación de la red, la latencia y las discrepancias de reloj en los navegadores provocan que el reproductor pierda el compás en pocos minutos.',
-      together_p_work1: 'Diseñé un protocolo de sincronización WebSocket host-authoritative con Fastify 5. Cuando el anfitrión reproduce o busca, el servidor transmite un ancla temporal autoritativa (tiempo de video + reloj del servidor).',
-      together_p_work2: 'Los clientes ejecutan un ciclo de corrección de desfase cada 5 segundos: variaciones milimétricas se compensan ajustando levemente la velocidad de reproducción, mientras que desviaciones mayores a 5 segundos activan un salto directo. Gestiona salas con códigos de 6 caracteres y base de datos PostgreSQL en Neon.',
-      together_btn_live: 'Aplicación en Vivo (together-78s9.onrender.com)',
+      together_bullet_1: 'Protocolo WebSocket host-authoritative en Fastify 5 que transmite anclas temporales autoritativas (tiempo de video + reloj del servidor) al reproducir, pausar o buscar.',
+      together_bullet_2: 'Ciclo de corrección cada 5 segundos: micro-ajusta velocidad ante variaciones mínimas y ejecuta saltos si la diferencia supera 5s. Gestión de salas y base de datos PostgreSQL en Neon.',
+      together_btn_live: 'Ver Demo en Vivo',
       together_btn_repo: 'Ver Repositorio',
 
       // Secondary Projects
@@ -201,7 +201,7 @@
 
       // Grupos de Habilidades
       skills_lang: 'Lenguajes de<br>Programación',
-      skills_backend: 'Backend y Bases de<br>Datos',
+      skills_backend: 'Backend y<br>Bases de Datos',
       skills_tools: 'Entorno y<br>Herramientas',
 
       // Contacto y Pie de Página

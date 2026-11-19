@@ -197,25 +197,28 @@
             <span class="project-category-badge" data-i18n="cambi_badge">Progressive Web App</span>
           </div>
 
+          <p class="project-tagline" data-i18n="cambi_tagline">
+            Real-time currency converter and local-first payment manager solving everyday transaction friction in Venezuela.
+          </p>
+
           <div class="project-narrative-grid">
             <div class="narrative-block">
-              <p class="project-tagline" data-i18n="cambi_tagline">
-                Real-time currency converter and local-first payment manager solving everyday transaction friction in Venezuela.
-              </p>
               <h4 data-i18n="lbl_problem">The Problem</h4>
               <p data-i18n="cambi_p_prob">
-                In Venezuela, official foreign exchange rates fluctuate constantly, and everyday mobile banking payments (Pago Móvil) require tedious copy-pasting of account numbers, national IDs, and bank codes. Poor cellular connectivity frequently interrupts transactions right at the checkout counter.
+                In Venezuela, official foreign exchange rates fluctuate constantly, and everyday mobile banking payments (Pago Móvil) require tedious copy-pasting of account numbers, national IDs, and bank codes. Poor cellular connectivity frequently interrupts transactions right at checkout counters.
               </p>
             </div>
 
             <div class="narrative-block">
               <h4 data-i18n="lbl_how_it_works">How It Works</h4>
-              <p data-i18n="cambi_p_work1">
-                A background PHP 8.4 cron worker scrapes official Central Bank (BCV) rates with automated fallback scrapers, caching rates in atomic local JSON files. The interface runs on Vanilla ES6+ and a Service Worker for 100% offline access.
-              </p>
-              <p data-i18n="cambi_p_work2">
-                The Pago Móvil manager stores all sensitive banking records purely in browser localStorage (zero PII sent to any server), instantly generating offline QR codes and clean WhatsApp payment summaries.
-              </p>
+              <ul class="narrative-bullets">
+                <li data-i18n="cambi_bullet_1">
+                  PHP 8.4 background cron scrapes official Central Bank (BCV) rates with automated fallback scrapers, caching atomically to local JSON files.
+                </li>
+                <li data-i18n="cambi_bullet_2">
+                  Local-first architecture keeps all sensitive payment data purely in browser localStorage (zero server PII), generating instant offline QR codes with Service Worker support.
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -230,12 +233,12 @@
           <div class="studio-card-footer">
             <div class="footer-action-links">
               <a href="https://cambibak.rf.gd/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                <span data-i18n="cambi_btn_live">Live Application (cambibak.rf.gd)</span>
+                <span data-i18n="cambi_btn_live">Live Demo</span>
                 <!-- Lucide External Link Icon -->
                 <svg class="lucide lucide-trail" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
               </a>
               <a href="https://github.com/fernandorodriguezrada/cambi" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                <span data-i18n="cambi_btn_repo">View Repository Details</span>
+                <span data-i18n="cambi_btn_repo">View Repository</span>
                 <!-- Lucide Github Icon -->
                 <svg class="lucide lucide-trail" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
               </a>
@@ -253,11 +256,12 @@
             <span class="project-category-badge" data-i18n="qr_badge">Institutional Platform</span>
           </div>
 
+          <p class="project-tagline" data-i18n="qr_tagline">
+            University attendance management platform replacing vulnerable paper sign-in sheets with ephemeral QR verification.
+          </p>
+
           <div class="project-narrative-grid">
             <div class="narrative-block">
-              <p class="project-tagline" data-i18n="qr_tagline">
-                University attendance management platform replacing vulnerable paper sign-in sheets with ephemeral QR verification.
-              </p>
               <h4 data-i18n="lbl_problem">The Problem</h4>
               <p data-i18n="qr_p_prob">
                 Paper attendance sheets at IUTECP were prone to proxy signing by absent students, took up valuable class time, and required professors to manually transcribe hundreds of attendance marks into administrative records at the end of every term.
@@ -266,12 +270,14 @@
 
             <div class="narrative-block">
               <h4 data-i18n="lbl_how_it_works">How It Works</h4>
-              <p data-i18n="qr_p_work1">
-                Built following the PDS Skeleton standard to isolate web-accessible files from private application logic. When class starts, a professor generates an ephemeral session backed by a 32-character cryptographic token with a strict 5-minute countdown timer.
-              </p>
-              <p data-i18n="qr_p_work2">
-                Students scan the projected code via an in-browser camera stream (jsQR). The server validates 4 strict conditions: token existence, server schedule date, active countdown TTL, and verified course enrollment before recording attendance. Includes custom CLI tools (bin/migrate.php and bin/seed.php).
-              </p>
+              <ul class="narrative-bullets">
+                <li data-i18n="qr_bullet_1">
+                  Professors generate dynamic sessions backed by 32-character cryptographic tokens with a strict 5-minute TTL, built with PDS Skeleton and PHP 8.2+ PDO.
+                </li>
+                <li data-i18n="qr_bullet_2">
+                  Students scan via in-browser camera stream (jsQR); server enforces a 4-point verification pipeline (token, date, TTL, course enrollment) before committing to MariaDB 11.8.
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -287,12 +293,12 @@
           <div class="studio-card-footer">
             <div class="footer-action-links">
               <a href="https://asistenciasiutecp.rf.gd/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                <span data-i18n="qr_btn_live">Live Application (asistenciasiutecp.rf.gd)</span>
+                <span data-i18n="qr_btn_live">Live Demo</span>
                 <!-- Lucide External Link Icon -->
                 <svg class="lucide lucide-trail" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
               </a>
               <a href="https://github.com/fernandorodriguezrada/qr_iutecp" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                <span data-i18n="qr_btn_repo">View Repository Details</span>
+                <span data-i18n="qr_btn_repo">View Repository</span>
                 <!-- Lucide Github Icon -->
                 <svg class="lucide lucide-trail" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
               </a>
@@ -310,11 +316,12 @@
             <span class="project-category-badge" data-i18n="together_badge">Real-Time Web Platform</span>
           </div>
 
+          <p class="project-tagline" data-i18n="together_tagline">
+            Listen to music in sync with a friend across the world via host-authoritative WebSockets and dynamic drift correction.
+          </p>
+
           <div class="project-narrative-grid">
             <div class="narrative-block">
-              <p class="project-tagline" data-i18n="together_tagline">
-                Listen to music in sync with a friend across the world via host-authoritative WebSockets and dynamic drift correction.
-              </p>
               <h4 data-i18n="lbl_problem">The Problem</h4>
               <p data-i18n="together_p_prob">
                 Listening to synchronized music across international distances (tested between Venezuela and Lithuania) is tricky: network jitter, latency spikes, and browser timing discrepancies cause playback to drift out of sync within minutes.
@@ -323,12 +330,14 @@
 
             <div class="narrative-block">
               <h4 data-i18n="lbl_how_it_works">How It Works</h4>
-              <p data-i18n="together_p_work1">
-                Engineered a custom host-authoritative WebSocket synchronization engine with Fastify 5. When the host (DJ) plays, pauses, or seeks, the server broadcasts an authoritative time anchor (current video time + exact server timestamp).
-              </p>
-              <p data-i18n="together_p_work2">
-                Clients run an automated 5-second drift correction loop: small millisecond offsets are smoothed by micro-adjusting the playback rate, while discrepancies greater than 5 seconds trigger a seamless hard seek. Manages rooms with 6-character codes, YouTube Data API quota caching, and serverless Postgres on Neon.
-              </p>
+              <ul class="narrative-bullets">
+                <li data-i18n="together_bullet_1">
+                  Host-authoritative WebSocket engine with Fastify 5 broadcasts authoritative time anchors (video timestamp + server clock) whenever playback changes.
+                </li>
+                <li data-i18n="together_bullet_2">
+                  Automated 5-second correction loop micro-adjusts playback rate for millisecond drift and triggers instant hard seeks for gaps > 5s. Rooms with 6-char codes and Postgres on Neon.
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -344,12 +353,12 @@
           <div class="studio-card-footer">
             <div class="footer-action-links">
               <a href="https://together-78s9.onrender.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                <span data-i18n="together_btn_live">Live Application (together-78s9.onrender.com)</span>
+                <span data-i18n="together_btn_live">Live Demo</span>
                 <!-- Lucide External Link Icon -->
                 <svg class="lucide lucide-trail" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
               </a>
               <a href="https://github.com/fernandorodriguezrada/together" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                <span data-i18n="together_btn_repo">View Repository Details</span>
+                <span data-i18n="together_btn_repo">View Repository</span>
                 <!-- Lucide Github Icon -->
                 <svg class="lucide lucide-trail" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
               </a>
@@ -525,7 +534,7 @@
           </h3>
           <ul class="skills-items-list">
             <li class="skills-row">
-              <span class="skills-key">MariaDB / MySQL</span>
+              <span class="skills-key">MariaDB · MySQL</span>
               <span class="skills-val">11.8, Query Plans</span>
             </li>
             <li class="skills-row">
@@ -533,8 +542,8 @@
               <span class="skills-val">Neon Serverless</span>
             </li>
             <li class="skills-row">
-              <span class="skills-key">Fastify / Node.js</span>
-              <span class="skills-val">v5, WebSocket Server</span>
+              <span class="skills-key">Node.js · Fastify</span>
+              <span class="skills-val">v5, WebSockets</span>
             </li>
             <li class="skills-row">
               <span class="skills-key">RESTful APIs</span>
@@ -542,7 +551,7 @@
             </li>
             <li class="skills-row">
               <span class="skills-key">WebSockets</span>
-              <span class="skills-val">Real-Time State Sync</span>
+              <span class="skills-val">Real-Time Sync</span>
             </li>
             <li class="skills-row">
               <span class="skills-key">PWA &amp; Cache</span>
@@ -572,7 +581,7 @@
             </li>
             <li class="skills-row">
               <span class="skills-key">DDEV</span>
-              <span class="skills-val">Local Dev Environments</span>
+              <span class="skills-val">Local Environments</span>
             </li>
             <li class="skills-row">
               <span class="skills-key">Git</span>
