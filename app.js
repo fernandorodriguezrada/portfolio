@@ -70,7 +70,6 @@
       cambi_p_work2: 'The Pago Móvil manager stores all sensitive banking records purely in browser localStorage (zero PII sent to any server), instantly generating offline QR codes and clean WhatsApp payment summaries.',
       cambi_btn_live: 'Live Application (cambibak.rf.gd)',
       cambi_btn_repo: 'View Repository Details',
-      cambi_note: 'Zero-PII server footprint • 100% offline QR',
 
       // Flagship 2: QR_IUTECP
       qr_badge: 'Institutional Platform',
@@ -81,7 +80,6 @@
       qr_btn_live: 'Live Application (asistenciasiutecp.rf.gd)',
       qr_btn_repo: 'View Repository Details',
       qr_btn_badge: 'Built for IUTECP University',
-      qr_note: '4-stage validation filter • Anti-proxy camera check',
 
       // Flagship 3: Together
       together_badge: 'Real-Time Web Platform',
@@ -91,7 +89,6 @@
       together_p_work2: 'Clients run an automated 5-second drift correction loop: small millisecond offsets are smoothed by micro-adjusting the playback rate, while discrepancies greater than 5 seconds trigger a seamless hard seek. Manages rooms with 6-character codes, YouTube Data API quota caching, and serverless Postgres on Neon.',
       together_btn_live: 'Live Application (together-78s9.onrender.com)',
       together_btn_repo: 'View Repository Details',
-      together_note: 'Tested cross-continentally (VE ↔ LT) • ±5s dynamic drift correction',
 
       // Secondary Projects
       type_playful: 'Rust • CLI',
@@ -172,7 +169,6 @@
       cambi_p_work2: 'El gestor de Pago Móvil guarda los datos bancarios exclusivamente en el localStorage del navegador (cero datos personales en servidores), generando códigos QR sin conexión y resúmenes limpios para WhatsApp.',
       cambi_btn_live: 'Aplicación en Vivo (cambibak.rf.gd)',
       cambi_btn_repo: 'Ver Repositorio',
-      cambi_note: 'Cero datos en servidor • QR 100% offline',
 
       // Flagship 2: QR_IUTECP
       qr_badge: 'Plataforma Institucional',
@@ -183,7 +179,6 @@
       qr_btn_live: 'Aplicación en Vivo (asistenciasiutecp.rf.gd)',
       qr_btn_repo: 'Ver Repositorio',
       qr_btn_badge: 'Desarrollado para el IUTECP',
-      qr_note: 'Filtro de 4 etapas • Bloqueo de capturas de pantalla',
 
       // Flagship 3: Together
       together_badge: 'Plataforma en Tiempo Real',
@@ -193,7 +188,6 @@
       together_p_work2: 'Los clientes ejecutan un ciclo de corrección de desfase cada 5 segundos: variaciones milimétricas se compensan ajustando levemente la velocidad de reproducción, mientras que desviaciones mayores a 5 segundos activan un salto directo. Gestiona salas con códigos de 6 caracteres y base de datos PostgreSQL en Neon.',
       together_btn_live: 'Aplicación en Vivo (together-78s9.onrender.com)',
       together_btn_repo: 'Ver Repositorio',
-      together_note: 'Probado internacionalmente (VE ↔ LT) • Corrección ±5s',
 
       // Secondary Projects
       type_playful: 'Rust • CLI',
